@@ -1,102 +1,30 @@
-* Deployed to https://ghostpad.brainbuddys.com 
----
-# 🕶️ **GhostPad**
-A local‑first, privacy‑focused text workspace built with **React**, **Vite**, and **Tailwind CSS**. GhostPad transforms and protects text entirely on your device using modern browser cryptography — no servers, no tracking, no data leaving your machine.
+## 🌼 What This Project Is For — Non‑Robot Art
 
----
+The **Non‑Robot Art** page exists to explain one simple thing:
 
-## 🔐 **Why GhostPad Exists**
-GhostPad is designed for creators, developers, and anyone who wants a simple, secure way to transform text without exposing it to the cloud. All encryption and decryption happen **client‑side**, powered by the WebCrypto API. Your password is never stored, logged, or transmitted.
+### **This website supports real, human-made art — not AI-generated art.**
+### https://ai.brainbuddys.com
+Many artists today feel drowned out by machine-made images. This project creates a safe, friendly “No‑Robot Zone” where handmade creativity is respected, celebrated, and protected.
 
----
+The purpose of this page is to:
 
-## ⚡ **Features**
-- **Local‑only encryption** using AES‑GCM  
-- **Password‑derived keys** via PBKDF2 (never stored or exposed)  
-- **React + Vite** for fast, modern performance  
-- **Tailwind CSS** for clean, responsive UI  
-- **Save encrypted notes** locally (browser storage)  
-- **Decrypt on demand** with the correct password  
-- **No backend, no network calls, no data leakage**  
+- 🌿 **Show visitors that all artwork on this site is created by real humans**, not robots or AI models.  
+- 🧶 **Support local artists** who rely on their craft, skill, and imagination.  
+- 🎨 **Explain the difference between digital art and AI art** in a way that’s easy to understand.  
+- ✌️ **Keep the vibe fun, simple, and hippie-friendly**, with moving objects, playful animations, and visuals that keep wandering minds entertained.  
+- 🔥 **Make it clear that this site honors handmade creativity**, whether it’s painting, crochet, illustration, photography, or any other craft.
 
----
+This page is the official statement of the site’s values:  
+**Human art matters. Local artists matter. Creativity matters. Robots don’t run this place.**
 
-## 🛡️ **Security Model**
-GhostPad uses:
-- **AES‑256‑GCM** for authenticated encryption  
-- **PBKDF2 key derivation** with a unique salt per message  
-- **Random IVs** for every encryption  
-- **Opaque CryptoKey objects**, which cannot be inspected in DevTools  
+## 🐂 Credits  
+Created by **Brett's Custom  Hybrid Web Development**  
+  High‑Vibe Creative Director
 
-Your text never leaves your device.  
-Your password is never saved.  
-Your keys are never exposed.  
 
----
-
-## 🧩 **Tech Stack**
-- ⚛️ React  
-- ⚡ Vite  
-- 🎨 Tailwind CSS  
-- 🔐 WebCrypto API  
-- 💾 LocalStorage (encrypted data only)
-
----
-
-## 🚀 **Getting Started**
-
-```bash
-npm install
-npm run dev
-```
-
-GhostPad runs entirely in your browser — no backend required.
-
----
-
-## 📁 **Project Structure**
-
-```
-src/
-  components/
-    EncryptPanel.jsx
-    DecryptPanel.jsx
-    SavedLetters.jsx
-  utils/
-    crypto.js
-    storage.js
-  styles/
-    global.css
-    animations.css
-    panel.css
-  App.jsx
-  main.jsx
-```
-
----
-
-## 🧠 **How It Works**
-1. You type a message  
-2. You enter a password  
-3. GhostPad derives a secure key using PBKDF2  
-4. AES‑GCM encrypts your message  
-5. You can save or share the encrypted output  
-6. Anyone with the encrypted text + password can decrypt it locally  
-
----
-
-## 🕳️ **Why “GhostPad”?**
-Because your text leaves **no trace**.  
-It appears when you need it, disappears when you don’t, and never touches a server.
-
----
-
-## 📜 **License**
-MIT — free to use, modify, and build on.
-
----
-
- # Fonts Used 
- * Sixtyfour-Regular-VariableFont.ttf
-
- 
+  
+## Fonts used
+*   Sansita-Italic
+*   Itim-Regular.ttf
+*    
+*  
