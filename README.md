@@ -20,6 +20,10 @@ This page is the official statement of the site’s values:
 ## 🐂 Credits  
 Created by **Brett's Custom  Hybrid Web Development**  
   High‑Vibe Creative Director
+  
+<p align="center">
+  <img src="./README.png" alt="Project Preview" width="600">
+</p>
 
 
   
