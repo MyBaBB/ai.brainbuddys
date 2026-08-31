@@ -1,0 +1,172 @@
+.reverseButtonWrapper {
+  animation: slideInDelay 0.8s ease-out 0.5s both;
+}
+
+@keyframes slideInDelay {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* NEW — opacity when no history */
+.noHistoryOpacity {
+  opacity: 0.3 !important;
+  pointer-events: none;
+}
+
+/* BASE BUTTON COLOR */
+.reverseButton {
+  color: #6ab7fa;
+
+  /* NEW — slow rotation + breathing zoom */
+  animation:
+    reverseRotate 14s linear infinite,
+    reverseZoom 4s ease-in-out infinite;
+}
+
+.reverseButton:hover {
+  color: #48a8fb;
+}
+
+/* COUNTER-CLOCKWISE ROTATION */
+@keyframes reverseRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* GENTLE ZOOM IN/OUT */
+@keyframes reverseZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Independent slow rotation for the spiral icon */
+.spiralRotate {
+  display: inline-block;
+  opacity: 0.7;
+  animation: spiralSpin 18s linear infinite;
+}
+
+@keyframes spiralSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.dataToolTipTime:hover::after {
+  --scale: 1;
+}
+
+/* .dataToolTipTime::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  padding: 0.1em 0.1em 0.2em 0.1em;
+  bottom: -2.6rem;
+  right: -2rem;
+  transform: translateX(-50%) scale(var(--scale));
+  transform-origin: bottom center;
+  transition: 0.35s;
+  border: 15px solid transparent;
+  border-bottom: rgba(0, 200, 255, 0.45) 10px solid;
+  
+  --scale: 0;
+  z-index: 2;
+} */
+.tooltipReact {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+  /* Cosmic bubble */
+  background: radial-gradient(
+    circle at 50% 50%,
+    #0a1a2f,
+    #00111c 60%,
+    #000000 100%
+  );
+  border: 1px solid rgba(0, 200, 255, 0.45);
+  border-radius: 100%;
+  transform-origin: top right;
+  /* Glow + distortion */
+  box-shadow:
+    0 0 16px rgba(0, 180, 255, 0.6),
+    0 0 14px rgba(0, 120, 255, 0.35),
+    inset 0 0 9px rgba(0, 255, 200, 0.25);
+
+  backdrop-filter: blur(6px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+
+  /* Text */
+  color: #c8f7ff;
+  font-weight: bold;
+  font-size: 0.85rem;
+  padding: 8px 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  /* Animation baseline */
+  opacity: 0;
+  transform: scale(0.7) rotateX(25deg);
+  transition:
+    opacity 0.35s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+  pointer-events: none;
+  z-index: 10;
+
+  /* Space-time ripple */
+  animation: spacetimePulse 4s ease-in-out infinite;
+}
+
+/* Space-time breathing pulse */
+@keyframes spacetimePulse {
+  0% {
+    box-shadow:
+      0 0 10px rgba(0, 180, 255, 0.5),
+      0 0 25px rgba(0, 120, 255, 0.3),
+      inset 0 0 14px rgba(0, 255, 200, 0.2);
+    transform: scale(0.98) rotateX(10deg);
+  }
+  50% {
+    box-shadow:
+      0 0 18px rgba(0, 220, 255, 0.7),
+      0 0 40px rgba(0, 150, 255, 0.45),
+      inset 0 0 22px rgba(0, 255, 200, 0.35);
+    transform: scale(1.03) rotateX(0deg);
+  }
+  100% {
+    box-shadow:
+      0 0 10px rgba(0, 180, 255, 0.5),
+      0 0 25px rgba(0, 120, 255, 0.3),
+      inset 0 0 14px rgba(0, 255, 200, 0.2);
+    transform: scale(0.98) rotateX(10deg);
+  }
+}
+
+.reverseButton:hover .tooltipReact {
+  opacity: 1;
+  transform: scale(1);
+}

@@ -1,0 +1,15 @@
+.not-robot-img {
+  width: 100px;
+  height: auto;
+  margin: auto;
+  margin-right: 1rem;
+
+  z-index: 1;
+}
+@media screen and (min-width: 400px) {
+  .not-robot-img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
