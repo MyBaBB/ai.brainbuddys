@@ -1,13 +1,10 @@
 import { useEffect } from "react";
 import ReverseButton from "../../../src/Components/ReverseButton/ReverseButton.jsx";
-import BatSignal from "../../Components/ContactMeFolder/ContactMe.jsx";
-import { GiGoat } from "react-icons/gi";
-import HippieFootprints from "../../Components/HippieFootprintsFolder/HippieFootprints.jsx";
-import { FaRegCopyright } from "react-icons/fa"; // FaRegCopyright
 import HippieME from "../../Components/HippieMeFolder/HippieMe.jsx";
- 
+import GoatFooter from "../../Components/FooterFolder/GoatFooter.jsx";
+
 import "./LocalArtist.css";
- 
+
 const LocalArtistFolder = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,20 +12,15 @@ const LocalArtistFolder = () => {
 
   return (
     <>
-      <div className="local-artist-wrapper absolute ">
+      <div className="local-artist-wrapper absolute">
         {/* HEADER */}
         <header className="local-artist-header relative">
-        
-         
           <ReverseButton />
-          < HippieME />
-          
+          <HippieME />
         </header>
 
         {/* MAIN CONTENT */}
-        <main className="content-box relative ">
-          
-
+        <main className="content-box relative">
           <ul className="groovy-list mt-4">
             <div className="items-enter relative flex w-full justify-center">
               <div className="traditionalSwapBlock w-[10rem] md:w-[15rem] traditionalWord">
@@ -61,49 +53,8 @@ const LocalArtistFolder = () => {
           </p>
         </main>
 
-        {/* COPYRIGHT + HYBRID TOOLTIP */}
-
-        <div className="relative ">
-          <span className="absolute bottom-[1.23rem] left-4 z-0 h-10 w-10 bg-transparent">
-            <a href="https://mybabb.com/youtubepageecho ">
-              <div className="copyRightAnchorTag2">
-                <div className="copyRightContainer2 flex flex-col items-center justify-center px-8 py-4">
-                  <span className="copyRightCool2 absolute left-4 top-[50%] -translate-y-1/2 transform">
-                    <FaRegCopyright />
-                  </span>
-
-                  <span className="noLeftBorder2 inline-block font-Itim-Regular">
-                    <span className="webDevFancyWords2 whitespace-nowrap">
-                      Hybrid&nbsp;Web-Craft
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </a>
-          </span>
-
-          {/* CONTACT ASIDE */}
-          <aside className="contact-aside relative">
-            <span className="absolute bottom-[-4.5rem] right-4 z-50">
-              <BatSignal />
-            </span>
-          </aside>
-
-          {/* FOOTER */}
-          <footer className="badge relative m-auto mb-4 mt-4 w-fit whitespace-nowrap text-amber-200">
-            <button
-              className="backToTopBtn"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <GiGoat size={50} />
-              <span className="tooltip hidden sm:block">Back to Top</span>
-            </button>
-          </footer>
-
-          <div className="absolute bottom-0 z-50">
-            <HippieFootprints />
-          </div>
-        </div>
+     
+        <GoatFooter />
       </div>
     </>
   );

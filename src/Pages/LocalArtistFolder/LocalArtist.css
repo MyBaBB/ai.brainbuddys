@@ -3,7 +3,7 @@
   min-height: 100vh;
   height: auto; /* Forces wrapper to expand with content */
   overflow-y: auto; /* Guarantees standard vertical scrolling */
-  padding-bottom: 6rem; /* Gives space for absolute elements at the bottom */
+ /* Gives space for absolute elements at the bottom */
   background-image: url("../../Images/bwVan1820x1080.webp");
   background-size: cover;
   background-position: center -10rem;
@@ -163,8 +163,8 @@
   margin: 10px 0;
 }
 
-/* Badge */
-.badge {
+/*   g\oat*/
+.goat {
   margin-top: 30px;
   text-align: center;
 
@@ -322,80 +322,11 @@
   margin: 0 auto;
 }
 
-.copyRightAnchorTag2 {
-  display: inline-block;
-  z-index: 9999;
-}
+ 
 
-.copyRightContainer2 {
-  position: relative;
-  display: flex;
-  transition: transform 0.4s ease;
-  z-index: 9999;
-}
+ 
 
-/* ICON */
-.copyRightCool2 {
-  font-size: 0.75rem;
-  color: rgba(253, 230, 138, 1);
-  transition:
-    font-size 0.4s ease,
-    color 0.4s ease,
-    filter 0.4s ease;
-  z-index: 9999;
-}
+ 
 
-/* TEXT */
-.noLeftBorder2 {
-  border: 0.1px solid rgba(253, 186, 116, 0.7);
-  border-radius: 0px 0px 2px 0px;
-  border-left: none;
-  border-top: none;
-  padding-right: 0.25rem;
-  padding-bottom: 0.15rem;
-  padding-left: 0.25rem;
-  color: rgba(253, 230, 138, 1);
-  font-size: 0.75rem;
-  transition:
-    font-size 0.4s ease,
-    letter-spacing 0.4s ease,
-    color 0.4s ease,
-    border-color 0.4s ease,
-    filter 0.4s ease;
-  z-index: 9999;
-}
 
-/* ============================
-   HIPPIE BLOOM HOVER EFFECT
-   ============================ */
-.copyRightAnchorTag2 .copyRightCool2 {
-  font-size: 1rem;
-  color: rgba(253, 230, 138, 1);
-  filter: drop-shadow(0 0 4px rgba(253, 186, 116, 0.6));
-  z-index: 9999;
-}
 
-.copyRightAnchorTag2:hover .noLeftBorder2 {
-  font-size: 1.15rem;
-  letter-spacing: 0.03rem;
-  margin-left: 0.5rem;
-  padding-right: 0.5rem;
-  color: aliceblue;
-  border-color: rgba(253, 230, 138, 1);
-  border-radius: 0px 2px 8px 2px;
-  filter: drop-shadow(0 0 3px rgba(253, 186, 116, 0.5));
-  z-index: 9999;
-}
-
-.copyRightAnchorTag2:hover .copyRightContainer2 {
-  transform: translateY(-2px);
-  z-index: 9999;
-}
-.webDevFancyWords2 {
-  display: inline-block;
-  transition:
-    transform 0.45s ease,
-    letter-spacing 0.45s ease,
-    font-size 0.45s ease;
-  z-index: 9999;
-}
