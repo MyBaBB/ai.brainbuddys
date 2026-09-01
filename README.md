@@ -29,6 +29,4 @@ Created by **Brett's Custom  Hybrid Web Development**
   
 ## Fonts used
 *   Sansita-Italic
-*   Itim-Regular.ttf
-*    
-*  
+*   Itim-Regular.ttf  

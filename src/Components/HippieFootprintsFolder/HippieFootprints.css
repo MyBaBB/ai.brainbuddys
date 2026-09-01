@@ -36,6 +36,8 @@
 .left-foot {
   transform: rotate(60deg);
   transform-origin: center bottom;
+  z-index: 9999;
+  filter: blur(0.5px);
 }
 
 /* Right footprint */
@@ -71,6 +73,7 @@
   height: 20px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
+  z-index: 9999;
   filter: blur(2px);
   opacity: 0;
   animation: smokeRise 2.5s ease-out forwards;
@@ -103,7 +106,7 @@
   position: fixed;
   bottom: 40px;
   left: 20px;
-  z-index: 10000;
+  z-index: 9999;
   width: 40px;
   height: 40px;
   border-radius: 50%;

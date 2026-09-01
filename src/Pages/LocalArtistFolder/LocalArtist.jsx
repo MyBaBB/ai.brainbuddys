@@ -1,14 +1,8 @@
 import { useEffect } from "react";
 import ReverseButton from "../../../src/Components/ReverseButton/ReverseButton.jsx";
-import NotRobot from "../../Components/NotRobotFolder/NotRobot.jsx";
-import BatSignal from "../../Components/ContactMeFolder/ContactMe.jsx";
-// import Weed from "../../Images/The_Stitching_Stoner/favicon.png";
-import { TbCamper } from "react-icons/tb";
+import HippieME from "../../Components/HippieMeFolder/HippieMe.jsx";
+import GoatFooter from "../../Components/FooterFolder/GoatFooter.jsx";
 
-import { GiCampCookingPot, GiGoat } from "react-icons/gi";
-import { FaCampground } from "react-icons/fa";
-import HippieFootprints from "../../Components/HippieFootprintsFolder/HippieFootprints.jsx";
-import { FaRegCopyright } from "react-icons/fa"; // FaRegCopyright
 import "./LocalArtist.css";
 
 const LocalArtistFolder = () => {
@@ -18,65 +12,23 @@ const LocalArtistFolder = () => {
 
   return (
     <>
-      <div className="local-artist-wrapper absolute ">
+      <div className="local-artist-wrapper absolute">
         {/* HEADER */}
         <header className="local-artist-header relative">
-          {/* <a href="/" className="home-link">
-            <img
-              src={Weed}
-              className="absolute left-[4rem] top-[4rem] z-50 scale-[175%]"
-              alt="Return to Home"
-            />
-          </a> */}
-
           <ReverseButton />
-
-          <div className="NotRobotGradient relative m-auto mb-2 mt-4 h-[100px] w-[100px]">
-            <a
-              href="https://about.us.mybabb.com/aboutuspage#"
-              className="not-robot-link hybridTooltip2 absolute"
-            >
-              <NotRobot />
-              <div className="tooltipTextLayer">
-                Human Hands Craft Better Energy{" "}
-              </div>
-              <div className="tooltipTextLayer2">Robot Art is Optional</div>
-              <div className="tooltipTextLayer3">It is Your Choice</div>
-            </a>
-          </div>
+          <HippieME />
         </header>
 
         {/* MAIN CONTENT */}
-        <main className="content-box relative mt-8">
-          <article className="groovy-title relative flex flex-col items-center justify-center text-center">
-            <h2>
-              <span className="inline-block scale-x-[-1] text-base xs:text-lg md:text-2xl">
-                <FaCampground color="limegreen" />
-              </span>
-              <span className="inline-block whitespace-nowrap">
-                &nbsp;&nbsp;Traditional&nbsp;&nbsp;
-                <span className="tbCamper inline-block text-base xs:text-lg md:text-2xl">
-                  <TbCamper color="limegreen" />
-                </span>
-                &nbsp;&nbsp;Style&nbsp;&nbsp;
-              </span>
-              <span className="inline-block text-base xs:text-lg md:text-2xl">
-                <GiCampCookingPot color="limegreen" />
-              </span>
-            </h2>
-
-            <p>Requesting - Local Artist</p>
-          </article>
-
+        <main className="content-box relative">
           <ul className="groovy-list mt-4">
             <div className="items-enter relative flex w-full justify-center">
-              <div className="traditionalSwapBlock traditionalWord">
+              <div className="traditionalSwapBlock w-[10rem] md:w-[15rem] traditionalWord">
                 <div className="quoteLeft absolute left-2 top-[50%] -translate-y-1/2 scale-x-[-1] transform text-base xs:text-lg md:text-2xl">
                   ✌🏻
                 </div>
 
                 <span className="traditionalWordVapor whitespace-nowrap">
-                
                   Welcome
                 </span>
 
@@ -88,8 +40,8 @@ const LocalArtistFolder = () => {
 
             <li>🎨 Handmade art and illustration</li>
             <li>📸 Real photography shot by human eyes</li>
-            <li>🖌️ Illustrator artwork and hand‑crafted vectors</li>
-            <li>🔷 Custom SVGs drawn with intention</li>
+            <li>🖌️ Illustrator art and Vector Graphics</li>
+            <li>🔷 Credited Artist From Source Libraries</li>
             <li>🍄 Human produced 3D Art Graphics</li>
             <li>✨ Photoshop for the digital artist</li>
             <li>🧑🏼‍💻 Custom Written CSS Animations</li>
@@ -101,49 +53,8 @@ const LocalArtistFolder = () => {
           </p>
         </main>
 
-        {/* COPYRIGHT + HYBRID TOOLTIP */}
-
-        <div className="relative ">
-          <span className="absolute bottom-[1.23rem] left-4 z-0 h-10 w-10 bg-transparent">
-            <a href="https://mybabb.com/youtubepageecho ">
-              <div className="copyRightAnchorTag2">
-                <div className="copyRightContainer2 flex flex-col items-center justify-center px-8 py-4">
-                  <span className="copyRightCool2 absolute left-4 top-[50%] -translate-y-1/2 transform">
-                    <FaRegCopyright />
-                  </span>
-
-                  <span className="noLeftBorder2 inline-block font-Itim-Regular">
-                    <span className="webDevFancyWords2 whitespace-nowrap">
-                      Hybrid&nbsp;Web-Craft
-                    </span>
-                  </span>
-                </div>
-              </div>
-            </a>
-          </span>
-
-          {/* CONTACT ASIDE */}
-          <aside className="contact-aside relative">
-            <span className="absolute bottom-[-4.5rem] right-4 z-50">
-              <BatSignal />
-            </span>
-          </aside>
-
-          {/* FOOTER */}
-          <footer className="badge relative m-auto mb-4 mt-4 w-fit whitespace-nowrap text-amber-200">
-            <button
-              className="backToTopBtn"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <GiGoat size={50} />
-              <span className="tooltip hidden sm:block">Back to Top</span>
-            </button>
-          </footer>
-
-          <div className="absolute bottom-0 z-50">
-            <HippieFootprints />
-          </div>
-        </div>
+     
+        <GoatFooter />
       </div>
     </>
   );
