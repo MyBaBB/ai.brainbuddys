@@ -1,5 +1,4 @@
 .local-artist-wrapper {
- 
   width: 100%;
   min-height: 100vh;
   height: auto; /* Forces wrapper to expand with content */
@@ -16,7 +15,7 @@
 .float {
   position: absolute;
   width: 80px;
-  opacity: 0.8;
+  opacity: 0.8; 
   animation: floaty 10s infinite ease-in-out;
 }
 
@@ -48,6 +47,28 @@
   }
 }
 
+ .top-groovy-title {
+  background: linear-gradient(
+    to bottom,
+    rgba(63, 46, 36, 0.85) 0%,
+    /* top lighter */ rgba(51, 35, 25, 0.85) 50%,
+    /* middle darker */ rgba(63, 46, 36, 0.85) 100% /* bottom lighter */
+  );
+  border: 1px solid rgba(46, 90, 44, 0.63); /* Forest Service Green */
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 0px #adff2fbf;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: rgba(249, 234, 174, 1);
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+    
+ }
+ 
+ 
 /* Content Box */
 .content-box {
   max-width: 700px;
@@ -56,7 +77,6 @@
   padding: 10px;
   padding-top: 25px;
   border-radius: 20px;
-
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
 
@@ -166,7 +186,7 @@
 .groovy-list,
 .content-box {
   font-size: 0.75rem;
-  color: rgb(249, 234, 174);
+  color: rgba(249, 234, 174, 1);
   font-family: "Sansita-Regular", sans-serif;
 }
 
@@ -191,22 +211,6 @@
   .content-box {
     font-size: 2rem;
   }
-}
-.NotRobotGradient {
-  overflow: visible;
-  border-radius: 100%;
-  background: radial-gradient(
-    rgba(70, 56, 47, 1) 0%,
-    rgba(70, 56, 47, 0.6) 50%,
-    rgba(70, 56, 47, 0) 100%
-  );
-  font-size: 1.3rem;
-  background: linear-gradient(
-    to bottom,
-    rgba(63, 46, 36, 0.85) 0%,
-    /* top lighter */ rgba(51, 35, 25, 0.85) 50%,
-    /* middle darker */ rgba(63, 46, 36, 0.85) 100% /* bottom lighter */
-  );
 }
 
 .noZone {
@@ -248,31 +252,7 @@
   margin-top: 15px;
 }
 /* HIPPIE VAN SLIDE-IN */
-.tbCamper {
-  display: inline-block;
-  animation: hippieVanSlide 4.2s ease-out forwards;
-  transform-origin: center;
-}
 
-/* Keyframes: slow slide + tiny bounce + mellow wiggle */
-@keyframes hippieVanSlide {
-  0% {
-    opacity: 0;
-    transform: translateX(-400px) rotate(-8deg) scale(0.9);
-    filter: blur(3px);
-  }
-  40% {
-    opacity: 1;
-    transform: translateX(10px) rotate(3deg) scale(1.05);
-    filter: blur(0px);
-  }
-  70% {
-    transform: translateX(0px) rotate(-2deg) scale(1);
-  }
-  100% {
-    transform: translateX(0px) rotate(0deg);
-  }
-}
 /* BACK TO TOP BUTTON */
 .backToTopBtn {
   position: relative;
@@ -419,198 +399,4 @@
     letter-spacing 0.45s ease,
     font-size 0.45s ease;
   z-index: 9999;
-}
-/* ============================================================
-   BASE TOOLTIP STRUCTURE
-   ============================================================ */
-.hybridTooltip2 {
-  position: relative;
-  display: inline-block;
-}
-
-/* ============================================================
-   IMAGE ( ::before )
-   ============================================================ */
-.hybridTooltip2::before {
-  content: "";
-  position: absolute;
-  top: 7rem;
-  bottom: auto;
-  left: 50%;
-  transform: translateX(-50%);
-
-  opacity: 0;
-  pointer-events: none;
-
-  width: min(320px, 80vw);
-  height: 180px;
-  background-image: url("../../Images/elvira220x400.webp");
-  background-size: cover;
-  background-position: center;
-  border-radius: 16px;
-  box-shadow: 0px 0px 12px rgba(173, 255, 47, 0.75);
-  border: 1px solid rgba(46, 90, 44, 0.63);
-  z-index: 999;
-}
-
-.hybridTooltip2:hover::before {
-  animation: hybridArcLaunch 0.8s cubic-bezier(0.25, 1.25, 0.25, 1) forwards;
-}
-
-@keyframes hybridArcLaunch {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 40px) translateX(-100%) scale(0.4) rotate(-5deg);
-  }
-  70% {
-    opacity: 1;
-    transform: translate(-50%, -10px) scale(1.05) rotate(1deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, 0) scale(1) rotate(0deg);
-  }
-}
-
-/* ============================================================
-   ARROW ( ::after )
-   ============================================================ */
-.hybridTooltip2:hover::after {
-  content: "";
-  position: absolute;
-  top: calc(120% - 19px);
-  left: 50%;
-
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 10px solid #adff2f;
-
-  filter: drop-shadow(0px 0px 4px #adff2fbf);
-  z-index: 1;
-
-  animation: arrowBounce 3.2s cubic-bezier(0.25, 1.25, 0.25, 1) forwards;
-}
-
-@keyframes arrowBounce {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 40px) scale(0.2); /* start BELOW */
-  }
-  60% {
-    opacity: 1;
-    transform: translate(-50%, 10px) scale(1.2); /* rising up */
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, 0) scale(1); /* final position */
-  }
-}
-
-.tooltipTextLayer,
-.tooltipTextLayer2,
-.tooltipTextLayer3 {
-  position: absolute;
-  top: 19.05rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(320px, 80vw);
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: "Itim-Regular";
-  font-size: 1.2rem;
-  color: rgb(116, 180, 248);
-  text-shadow: 0 0 3px black;
-
-  opacity: 0;
-  pointer-events: none;
-  z-index: 1000;
-  border: 2px solid rgba(46, 90, 44, 0.63); /* Forest Service Green */
-  border-radius: 16px;
-  background-color: rgba(70, 56, 47, 1);
-  box-shadow: 0px 0px 4px rgba(173, 255, 47, 0.75);
-}
-
-/* ============================================================
-   VERSE 1 — Fade In → Hang → Exit (2× slower)
-   ============================================================ */
-.hybridTooltip2:hover .tooltipTextLayer {
-  animation: verse1Sequence 8.4s ease-out forwards;
-}
-
-@keyframes verse1Sequence {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 20px) scale(0.8);
-  }
-  20% {
-    opacity: 1;
-    transform: translate(-50%, 0px) scale(1);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(-50%, 0px) scale(1); /* LONG HANG TIME */
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -200px) scale(0.8);
-  }
-}
-
-/* ============================================================
-   VERSE 2 — Enters After Verse 1 (2× slower)
-   ============================================================ */
-.hybridTooltip2:hover .tooltipTextLayer2 {
-  animation: verse2Sequence 8s ease-out forwards;
-  animation-delay: 8.4s; /* waits for verse 1 */
-}
-
-@keyframes verse2Sequence {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 20px) scale(0.8);
-  }
-  20% {
-    opacity: 1;
-    transform: translate(-50%, 0px) scale(1);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(-50%, 0px) scale(1); /* LONG HANG TIME */
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -200px) scale(0.8);
-  }
-}
-
-/* ============================================================
-   VERSE 3 — Enters After Verse 2 (2× slower) — STAYS VISIBLE
-   ============================================================ */
-.hybridTooltip2:hover .tooltipTextLayer3 {
-  animation: verse3Sequence 8s ease-out forwards;
-  animation-delay: 16.4s; /* waits for verse 1 + verse 2 */
-}
-
-@keyframes verse3Sequence {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 20px) scale(0.8);
-  }
-  20% {
-    opacity: 1;
-    transform: translate(-50%, 0px) scale(1);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(-50%, 0px) scale(1); /* LONG HANG TIME */
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -200px) scale(0.8);
-  }
 }
