@@ -295,7 +295,7 @@
 
 /* Container */
 .traditionalSwapBlock {
-  width: 20rem;
+  width: fit-content;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -312,7 +312,6 @@
 .traditionalWord {
   position: relative;
   display: inline-block;
-  width: 20rem;
   padding: 2px 8px;
   border-radius: 8px;
   background: rgba(63, 46, 36, 0.6);

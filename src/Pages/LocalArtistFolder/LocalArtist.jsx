@@ -26,18 +26,17 @@ const LocalArtistFolder = () => {
         </header>
 
         {/* MAIN CONTENT */}
-        <main className="content-box relative mt-8">
+        <main className="content-box relative ">
           
 
           <ul className="groovy-list mt-4">
             <div className="items-enter relative flex w-full justify-center">
-              <div className="traditionalSwapBlock traditionalWord">
+              <div className="traditionalSwapBlock w-[10rem] md:w-[15rem] traditionalWord">
                 <div className="quoteLeft absolute left-2 top-[50%] -translate-y-1/2 scale-x-[-1] transform text-base xs:text-lg md:text-2xl">
                   ✌🏻
                 </div>
 
                 <span className="traditionalWordVapor whitespace-nowrap">
-                
                   Welcome
                 </span>
 
@@ -49,8 +48,8 @@ const LocalArtistFolder = () => {
 
             <li>🎨 Handmade art and illustration</li>
             <li>📸 Real photography shot by human eyes</li>
-            <li>🖌️ Illustrator artwork and hand‑crafted vectors</li>
-            <li>🔷 Custom SVGs drawn with intention</li>
+            <li>🖌️ Illustrator art and Vector Graphics</li>
+            <li>🔷 Credited Artist From Source Libraries</li>
             <li>🍄 Human produced 3D Art Graphics</li>
             <li>✨ Photoshop for the digital artist</li>
             <li>🧑🏼‍💻 Custom Written CSS Animations</li>
