@@ -12,10 +12,13 @@ const GoatFooter = () => {
     <div className="goat-footer-outer-wrapper w-full h-full relative ">
       {/* NATURE IMAGE BANNER PLACED DIRECTLY ON TOP OF THE FOOTER */}
       <div 
-        className="footer-nature-top-banner "
+        className="footer-nature-top-banner relative "
         style={{ backgroundImage: `url(${TaosImage})` }}
       />
-
+          <div className="absolute bottom-0 z-50">
+              <HippieFootprints />
+          </div>
+         
       {/* FOOTER MAIN CONTAINER */}
       <footer className="goat-footer-wrapper relative mt-4  w-full  ">
         {/* FOOTER CONTENT LAYER */}
@@ -55,10 +58,7 @@ const GoatFooter = () => {
               <span className="tooltipGoat hidden sm:block">To Top</span>
             </button>
           </div>
-
-          <div className="absolute bottom-0 z-50">
-            <HippieFootprints />
-          </div>
+          
         </div>
       </footer>
     </div>
