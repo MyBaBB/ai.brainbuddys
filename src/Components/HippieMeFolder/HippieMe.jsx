@@ -4,7 +4,7 @@ import './HippieMe.css'
 
 const HippieMe = () => {
   return (
-    <div className="hippie-me-container relative mx-auto mt-4 -mb-20 flex justify-center">
+    <div className="hippie-me-container relative mx-auto mt-4 -mb-20 flex justify-center pointer-events-none">
       <div className="hybridTooltip2">
         <div className="tooltipTextLayer">
           Human Hands Craft Better Energy{" "}

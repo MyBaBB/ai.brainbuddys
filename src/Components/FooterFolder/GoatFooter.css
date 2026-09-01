@@ -1,22 +1,31 @@
-/* Container Base */
+/* Container Base - Solid background color blocks the van underneath */
 .goat-footer-wrapper {
   width: 100%;
   position: relative;
+ 
 }
 
-/* ABSOLUTE BACKGROUND IMAGE EXTENDING TO BOTTOM OF SCREEN */
-.footer-nature-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  /* Extends 100vh down from the top of the footer to guarantee reaching screen bottom */
-  bottom: -100vh; 
+/* ABSOLUTE BACKGROUND CONTAINER */
+.goat-footer-outer-wrapper {
   width: 100%;
+}
+ .footer-nature-top-banner {
+   width: 100%;
+  height: 400px;
   background-size: cover;
-  background-position: center top;
+  background-position: center  center;
   background-repeat: no-repeat;
-  z-index: 0;
+  position: relative;
+  z-index: 10;
+ }
+
+
+/* FOOTER BASE CONTAINER */
+.goat-footer-wrapper {
+  width: 100%;
+  position: relative;
+  height: 6.38rem;
+  
 }
 
 /* Goat */
@@ -33,6 +42,7 @@
   border-radius: 12px;
   box-shadow: 0px 0px 5px 0px #adff2fbf;
   padding: 4px;
+  z-index: 99999;
 }
 
 /* BACK TO TOP BUTTON */
@@ -43,7 +53,7 @@
   cursor: pointer;
   padding: 6px;
   border-radius: 12px;
-  color: inherit;
+  color: skyblue;
   transition: transform 0.3s ease;
 }
 
@@ -52,9 +62,9 @@
 }
 
 /* Tooltip */
-.backToTopBtn .tooltip {
+.backToTopBtn .tooltipGoat {
   position: absolute;
-  bottom: 3.4rem;
+  bottom: 5.64rem;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(63, 46, 36, 0.85);
@@ -62,7 +72,7 @@
   padding: 4px 8px;
   border-radius: 8px;
   box-shadow: 0px 0px 5px 0px #adff2fbf;
-  color: #ade0f8;
+  color: rgba(246, 156, 104, 1);
   font-family: "Sansita-Regular", sans-serif;
   font-size: 1rem;
   white-space: nowrap;
@@ -71,7 +81,7 @@
   transition: opacity 0.3s ease;
 }
 
-.backToTopBtn:hover .tooltip {
+.backToTopBtn:hover .tooltipGoat {
   opacity: 1;
 }
 
@@ -82,7 +92,6 @@
 }
 
 /* COPYRIGHT CONTAINER & HOVER EFFECTS */
-
 .copyRightInstaller {
   top: 1.63rem;
 }

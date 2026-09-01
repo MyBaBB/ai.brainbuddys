@@ -1,14 +1,19 @@
 .local-artist-wrapper {
   width: 100%;
   min-height: 100vh;
-  height: auto; /* Forces wrapper to expand with content */
-  overflow-y: auto; /* Guarantees standard vertical scrolling */
- /* Gives space for absolute elements at the bottom */
+  /* Allow the main document/window to handle scrolling */
+  overflow-y: hidden; 
+  position: relative;
+  /* Background image settings */
   background-image: url("../../Images/bwVan1820x1080.webp");
-  background-size: cover;
-  background-position: center -10rem;
+  background-size: cover minmax(100%, auto);
+  background-position: center -8rem;
   background-repeat: no-repeat;
   background-color: #8e8e8e;
+  
+
+  /* Ensures the background image moves naturally with document scrolling */
+  background-attachment: scroll; 
 }
 
 /* Floating Objects */
