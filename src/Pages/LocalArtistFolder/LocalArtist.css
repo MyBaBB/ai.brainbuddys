@@ -3,7 +3,7 @@
   min-height: 100vh;
   overflow-y: hidden; 
   position: relative;
-  background-image: url("../../Images/bwVan1820x1080.webp");
+  background-image: url("../../Images/CaveArt.png");
   background-size: cover minmax(100%, auto);
   background-position: center -8rem;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@
   padding: 12px;
   text-align: center;
   margin-bottom: 5px;
-  color: rgba(249, 234, 174, 1);
+  color: rgb(251, 232, 215);
   width: fit-content;
   margin: auto;
   margin-top: 2rem;
@@ -73,9 +73,11 @@
 .content-box {
   max-width: 700px;
   margin: auto;
+  margin-top: 1.275rem;
+  
   background: rgba(55, 39, 29, 0.4);
   padding: 10px;
-  padding-top: 25px;
+  padding-top: 5px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
@@ -186,8 +188,9 @@
 .groovy-list,
 .content-box {
   font-size: 0.75rem;
-  color: rgba(249, 234, 174, 1);
+  color: rgb(251, 232, 215);
   font-family: "Sansita-Regular", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 /* 400px to 700px */
@@ -279,9 +282,11 @@
   background: rgba(63, 46, 36, 0.6);
   border: 1px solid rgba(46, 90, 44, 0.63);
   box-shadow: 0px 0px 5px #adff2fbf;
-  color: #f9eaae;
+  color: #fbe8d7;
   white-space: nowrap;
   margin: 0 auto;
+  text-shadow:  1px 1px 2px rgba(0, 0, 0, 1);
+  
 }
 
  
