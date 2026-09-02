@@ -1,18 +1,13 @@
 .local-artist-wrapper {
   width: 100%;
   min-height: 100vh;
-  /* Allow the main document/window to handle scrolling */
   overflow-y: hidden; 
   position: relative;
-  /* Background image settings */
   background-image: url("../../Images/bwVan1820x1080.webp");
   background-size: cover minmax(100%, auto);
   background-position: center -8rem;
   background-repeat: no-repeat;
   background-color: #120D0F;
-  
-
-  /* Ensures the background image moves naturally with document scrolling */
   background-attachment: scroll; 
 }
 
