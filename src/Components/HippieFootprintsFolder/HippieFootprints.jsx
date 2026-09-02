@@ -1,21 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { GiFootprint, GiCorkHat } from "react-icons/gi";
 import { BsCup } from "react-icons/bs";
-import { GiMushroomHouse } from "react-icons/gi";
-import { GiSuperMushroom } from "react-icons/gi";
-
 import "./HippieFootprints.css";
 
 export default function HippieFootprints() {
   const startTime = useRef(null);
   const [elapsed, setElapsed] = useState(0);
   const [puffs, setPuffs] = useState([]);
-  const [showWizard, setShowWizard] = useState(true);
-
-  function toggleIcon() {
-    setShowWizard((prev) => !prev);
-    restartEverything(); // keep your original function
-  }
 
   // Restart animation
   const restartEverything = () => {
@@ -78,7 +69,7 @@ export default function HippieFootprints() {
         size={40}
         className={`footprint fade-step ${isLeft ? "left-foot" : "right-foot"}`}
         style={{
-          position: "fixed",
+          position: "absolute",
           left: `${leftPx + 10}px`,
           bottom: `${bottomPx}px`,
           zIndex: 9998,
@@ -91,7 +82,7 @@ export default function HippieFootprints() {
         size={30}
         className="cup"
         style={{
-          position: "fixed",
+          position: "absolute",
           left: `${cupX + 70}px`,
           bottom: `${cupBottomPx}px`,
           zIndex: 9999,
@@ -106,7 +97,7 @@ export default function HippieFootprints() {
         size={50}
         className="hat"
         style={{
-          position: "fixed",
+          position: "absolute",
           left: `${cupX - 12.5}px`,
           bottom: `${hatBottomPx - 35}px`,
           zIndex: 9999,
@@ -122,7 +113,7 @@ export default function HippieFootprints() {
           key={puff.uid}
           className="smoke-puff"
           style={{
-            position: "fixed",
+            position: "absolute",
             left: `${cupX + 35}px`,
             bottom: `${hatBottomPx + 40}px`,
             pointerEvents: "none",
@@ -130,12 +121,6 @@ export default function HippieFootprints() {
           }}
         />
       ))}
-
-      {/* RESTART BUTTON */}
-      {/* RESTART BUTTON */}
-      {/* <button className="footprintWizard" onClick={toggleIcon}>
-        {showWizard ? <GiMushroomHouse /> : <GiSuperMushroom />}
-      </button> */}
     </>
   );
 }

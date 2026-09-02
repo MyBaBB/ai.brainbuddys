@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import ReverseButton from "../../../src/Components/ReverseButton/ReverseButton.jsx";
+import ReverseButton from "../../Components/ReverseButton/ReverseButton.jsx";
 import HippieME from "../../Components/HippieMeFolder/HippieMe.jsx";
 import GoatFooter from "../../Components/FooterFolder/GoatFooter.jsx";
-
+import HippieFootprints from "../../Components/HippieFootprintsFolder/HippieFootprints.jsx";
 import "./LocalArtist.css";
 
 const LocalArtistFolder = () => {
@@ -54,8 +54,10 @@ const LocalArtistFolder = () => {
         </main>
 
      
-        <GoatFooter />
+         <GoatFooter />
+        
       </div>
+      
     </>
   );
 };
