@@ -5,6 +5,7 @@ import { FaRegCopyright } from "react-icons/fa"
 import BatSignal from "../ContactMeFolder/ContactMe.jsx"
 import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx"
 import TaosImage from "../../Images/ai.brainbuddys.webp"
+import { IoColorPaletteOutline } from "react-icons/io5";
 import './GoatFooter.css'
 
 const GoatFooter = () => {
@@ -16,10 +17,10 @@ const GoatFooter = () => {
   style={{ backgroundImage: `url(${TaosImage})` }}
 >
   <p className="text-white bg-black border-2 border-black rounded-2xl
-      text-[0.3rem]  px-4 left-[50%] translate-x-[-50%]
-       sm:left-0 sm:translate-x-0 bottom-1 absolute whitespace-nowrap">
+      text-[0.3rem] sm:text-[0.5rem] px-4  right-4
+        w-fit bottom-1 absolute whitespace-nowrap">
    
-    Offering to the Great Spirit by Eanger Irving Couse
+     Offering to the Great Spirit - Eanger Irving Couse
   </p>
 </div>
 
