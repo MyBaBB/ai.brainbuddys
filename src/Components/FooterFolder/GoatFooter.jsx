@@ -5,7 +5,7 @@ import { FaRegCopyright } from "react-icons/fa"
 import BatSignal from "../ContactMeFolder/ContactMe.jsx"
 import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx"
 import TaosImage from "../../Images/ai.brainbuddys.webp"
-import { IoColorPaletteOutline } from "react-icons/io5";
+ 
 import './GoatFooter.css'
 
 const GoatFooter = () => {
