@@ -12,9 +12,17 @@ const GoatFooter = () => {
     <div className="goat-footer-outer-wrapper w-full h-full relative">
       {/* NATURE IMAGE BANNER PLACED DIRECTLY ON TOP OF THE FOOTER */}
       <div 
-        className="footer-nature-top-banner relative"
-        style={{ backgroundImage: `url(${TaosImage})` }}
-      />
+  className="footer-nature-top-banner relative"
+  style={{ backgroundImage: `url(${TaosImage})` }}
+>
+  <p className="text-white bg-black border-2 border-black rounded-2xl
+      text-[0.3rem]  px-4 left-[50%] translate-x-[-50%]
+       sm:left-0 sm:translate-x-0 bottom-1 absolute whitespace-nowrap">
+   
+    Offering to the Great Spirit by Eanger Irving Couse
+  </p>
+</div>
+
           
       {/* FOOTER MAIN CONTAINER */}
       <footer className="goat-footer-wrapper relative mt-4 w-full">
