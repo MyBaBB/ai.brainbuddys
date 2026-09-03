@@ -20,20 +20,20 @@ const SacrificeArtCC = () => {
         <span className="cc-SacrificeArt-arrow">{isOpen ? "▼" : "▲"}</span>
       </div>
 
-      {/* Expanded Pop-Out Menu (Expands Upward) */}
+      {/* Expanded Pop-Out Menu */}
       {isOpen && (
         <div className="cc-SacrificeArt-details-popout">
           <p className="cc-SacrificeArt-detail-item">
-            <strong>Artwork:</strong> Offering to the Great Spirit (1921)
+            <span className="itemColor">Artwork:</span> Offering to the Great Spirit (1921)
           </p>
           <p className="cc-SacrificeArt-detail-item">
-            <strong>Artist:</strong> E. Irving Couse (Taos Art Colony)
+            <span className="itemColor">Artist:</span> E. Irving Couse (Taos Art Colony)
           </p>
           <p className="cc-SacrificeArt-detail-item">
-            <strong>Medium:</strong> Oil on Canvas
+            <span className="itemColor">Medium:</span> Oil on Canvas
           </p>
           <p className="cc-SacrificeArt-detail-item">
-            <strong>Record:</strong> Featured Masterpiece Lot
+            <span className="itemColor">Record:</span> Featured Masterpiece Lot
           </p>
           <div className="cc-SacrificeArt-divider" />
           <a

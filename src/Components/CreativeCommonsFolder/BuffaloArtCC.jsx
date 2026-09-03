@@ -1,7 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "./CreativeCommons.css";
 import { GiBullyMinion } from "react-icons/gi";
-
 
 const BuffaloArtCC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +14,7 @@ const BuffaloArtCC = () => {
     >
       {/* Collapsed Header Pill */}
       <div className="cc-BuffaloArt-badge-header">
-        <span className="cc-icon scale-x-[-1] "><GiBullyMinion  /></span>
+        <span className="cc-icon scale-x-[-1] "><GiBullyMinion /></span>
         <span className="cc-title">Background Art CC</span>
         <span className="cc-arrow">{isOpen ? "▲" : "▼"}</span>
       </div>
@@ -24,16 +23,16 @@ const BuffaloArtCC = () => {
       {isOpen && (
         <div className="cc-BuffaloArt-details-popout">
           <p className="cc-BuffaloArt-detail-item">
-            <strong>Artwork:</strong> Steppe Bison (Chauvet Cave)
+            <span className="itemColor">Artwork:</span> Steppe Bison (Chauvet Cave)
           </p>
           <p className="cc-BuffaloArt-detail-item">
-            <strong>Discovery:</strong> The &quot;Higgs Bison&quot; Hybrid
+            <span className="itemColor">Discovery:</span> The &quot;Higgs Bison&quot; Hybrid
           </p>
           <p className="cc-BuffaloArt-detail-item">
-            <strong>Photo Credit:</strong> Carole Fritz / Sci.News
+            <span className="itemColor">Photo Credit:</span> Carole Fritz / Sci.News
           </p>
           <p className="cc-BuffaloArt-detail-item">
-            <strong>License:</strong> CC BY-SA / Fair Use Attribution
+            <span className="itemColor">License:</span> CC BY-SA / Fair Use Attribution
           </p>
           <div className="cc-BuffaloArt-divider" />
           <a

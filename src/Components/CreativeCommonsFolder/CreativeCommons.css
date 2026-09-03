@@ -100,7 +100,7 @@
   line-height: 1.3;
 }
 
-.cc-BuffaloArt-detail-item strong {
+.cc-BuffaloArt-detail-item .itemColor {
   color: #ade0f8;
 }
 
@@ -219,7 +219,7 @@
   line-height: 1.3;
 }
 
-.cc-SacrificeArt-detail-item strong {
+.cc-SacrificeArt-detail-item .itemColor {
   color: #ade0f8;
 }
 
