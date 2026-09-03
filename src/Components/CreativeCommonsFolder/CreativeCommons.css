@@ -54,6 +54,7 @@
   font-size: 0.8rem;
   backdrop-filter: blur(4px);
   animation: slideDown 0.2s ease-in-out;
+
 }
 
 /* Invisible bridge element connecting button and menu */
@@ -104,6 +105,126 @@
   from {
     opacity: 0;
     transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.cc-SacrificeArt-badge-wrapper {
+  position: absolute;
+  background-color: black;
+  padding:2px 8px;
+  border:1px solid black;
+  border-radius: 5.4px;
+  border-radius: 12px;
+  bottom: 0.5rem; /* Anchored to bottom instead of top */
+  right: 1rem;
+  z-index: 50;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Sansita-Regular", sans-serif;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Older Firefox */
+  -ms-user-select: none;     /* Old IE/Edge */
+  user-select: none;         /* Standard */
+}
+
+/* Collapsed Header Pill */
+.cc-SacrificeArt-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 6px 12px;
+  background: rgba(51, 35, 25, 0.85);
+  border: 1px solid rgba(46, 90, 44, 0.63);
+  border-radius: 12px;
+  box-shadow: 0px 0px 5px 0px #adff2fbf;
+  color: #fbe8d7;
+  font-size: 0.85rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.cc-SacrificeArt-header:hover {
+  background: rgba(63, 46, 36, 0.95);
+  box-shadow: 0px 0px 8px 0px darkslategrey;
+}
+
+.cc-SacrificeArt-arrow {
+  font-size: 0.65rem;
+  color: #ade0f8;
+}
+
+/* Expanded Pop-Out Menu (Expands Upward) */
+.cc-SacrificeArt-details-popout {
+  position: absolute;
+  bottom: 100%; /* Positions menu directly above header pill */
+  right: 0;
+  width: 240px;
+  padding: 10px 12px;
+  margin-bottom: 6px; /* Space between pill and menu */
+  background: rgba(51, 35, 25, 0.95);
+  border: 1px solid rgba(46, 90, 44, 0.8);
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px darkslategrey;
+  color: #fbe8d7;
+  font-size: 0.8rem;
+  backdrop-filter: blur(4px);
+  animation: slideUp2 0.2s ease-in-out;
+}
+
+/* Invisible bridge element connecting button and menu */
+.cc-SacrificeArt-details-popout::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Bridge extends DOWN toward the header pill */
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+.cc-SacrificeArt-detail-item {
+  margin: 4px 0;
+  line-height: 1.3;
+}
+
+.cc-SacrificeArt-detail-item strong {
+  color: #ade0f8;
+}
+
+.cc-SacrificeArt-divider {
+  height: 1px;
+  background: rgba(46, 90, 44, 0.63);
+  box-shadow: 0px 0px 3px #adff2fbf;
+  margin: 8px 0;
+}
+
+.cc-SacrificeArt-link, 
+.cc-SacrificeArt-source-link {
+  color: #ade0f8;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.cc-SacrificeArt-link:hover, 
+.cc-SacrificeArt-source-link:hover {
+  color: #adff2f;
+}
+
+.cc-SacrificeArt-source-link {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes slideUp2 {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
   }
   to {
     opacity: 1;
