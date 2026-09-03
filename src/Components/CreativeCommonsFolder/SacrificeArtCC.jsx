@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { BiDonateBlood } from "react-icons/bi";
 import "./CreativeCommons.css";
 
 const SacrificeArtCC = () => {
@@ -13,7 +14,7 @@ const SacrificeArtCC = () => {
     >
       {/* Collapsed Header Pill */}
       <div className="cc-SacrificeArt-header">
-        <span className="cc-SacrificeArt-icon">🪶</span>
+        <span className="cc-SacrificeArt-icon cc-icon2 scale-x-[-1] "><BiDonateBlood /></span>
         <span className="cc-SacrificeArt-title">
           Offering to the Great Spirit - E.I. Couse
         </span>

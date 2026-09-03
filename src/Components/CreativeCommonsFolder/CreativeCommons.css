@@ -60,7 +60,7 @@
 
 }
   
-.cc-icon {
+.cc-icon, .cc-icon2 {
   font-size: 1.15rem
 }
 
@@ -70,7 +70,7 @@
     right: 1.5rem;
     display: none;
    }
-.cc-BuffaloArt-badge-header, .cc-icon {
+.cc-BuffaloArt-badge-header, .cc-icon, .cc-icon2 {
   font-size: 0.35rem
 }
 }
@@ -161,7 +161,7 @@
 }
 
 /* Collapsed Header Pill */
-.cc-SacrificeArt-header {
+.cc-SacrificeArt-header  {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -263,7 +263,7 @@
     right: 1.5rem;
     display: none;
    }
-.cc-SacrificeArt-badge-header, .cc-icon {
+.cc-SacrificeArt-badge-header, .cc-icon, .cc-icon2 {
   font-size: 0.35rem
 }
 }
