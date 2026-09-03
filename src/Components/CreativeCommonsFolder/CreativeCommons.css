@@ -55,7 +55,7 @@
   box-shadow: 0px 0px 10px 0px darkslategrey;
   color: #fbe8d7;
   font-size: 0.8rem;
-  backdrop-filter: blur(4px);
+ 
   animation: slideDown 0.2s ease-in-out;
 
 }
@@ -125,7 +125,6 @@
 
 .cc-BuffaloArt-source-link {
   display: block;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -201,7 +200,7 @@
   box-shadow: 0px 0px 10px 0px darkslategrey;
   color: #fbe8d7;
   font-size: 0.8rem;
-  backdrop-filter: blur(4px);
+
   animation: slideUp2 0.2s ease-in-out;
 }
 
@@ -245,7 +244,6 @@
 
 .cc-SacrificeArt-source-link {
   display: block;
-  font-weight: bold;
   text-align: center;
 }
 
