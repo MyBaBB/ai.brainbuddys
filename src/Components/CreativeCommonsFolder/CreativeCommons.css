@@ -1,7 +1,7 @@
 .cc-BuffaloArt-badge-wrapper {
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 6.2rem;
   z-index: 50;
   display: inline-block;
   cursor: pointer;
@@ -11,6 +11,9 @@
   -ms-user-select: none;     /* Old IE/Edge */
   user-select: none;         /* Standard */
 }
+
+
+
 
 /* Collapsed Header Pill */
 .cc-BuffaloArt-badge-header {
@@ -56,6 +59,31 @@
   animation: slideDown 0.2s ease-in-out;
 
 }
+  
+.cc-icon {
+  font-size: 1.15rem
+}
+
+@media screen and (max-width: 528px) {
+  .cc-BuffaloArt-badge-wrapper {
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+   }
+.cc-BuffaloArt-badge-header, .cc-icon {
+  font-size: 0.35rem
+}
+}
+@media screen and (min-width: 528px) and (max-width: 1200px) {
+  .cc-BuffaloArt-badge-wrapper {
+    top: 1.5rem;
+    right: 1.5rem;
+  
+   }
+}
+
+
+
 
 /* Invisible bridge element connecting button and menu */
 .cc-BuffaloArt-details-popout::after {
@@ -230,4 +258,21 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+@media screen and (max-width: 528px) {
+  .cc-SacrificeArt-badge-wrapper {
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+   }
+.cc-SacrificeArt-badge-header, .cc-icon {
+  font-size: 0.35rem
+}
+}
+@media screen and (min-width: 528px)   {
+ .cc-SacrificeArt-badge-wrapper {
+    bottom: 1rem;
+    right: 1.5rem;
+  
+   }
 }

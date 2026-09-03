@@ -15,7 +15,7 @@ const BuffaloArtCC = () => {
     >
       {/* Collapsed Header Pill */}
       <div className="cc-BuffaloArt-badge-header">
-        <span className="cc-icon scale-x-[-1]"><GiBullyMinion size={20} /></span>
+        <span className="cc-icon scale-x-[-1] "><GiBullyMinion  /></span>
         <span className="cc-title">Background Art CC</span>
         <span className="cc-arrow">{isOpen ? "▲" : "▼"}</span>
       </div>
