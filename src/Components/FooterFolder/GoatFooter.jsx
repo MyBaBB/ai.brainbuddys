@@ -5,9 +5,9 @@ import { FaRegCopyright } from "react-icons/fa"
 import BatSignal from "../ContactMeFolder/ContactMe.jsx"
 import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx"
 import TaosImage from "../../Images/ai.brainbuddys.webp"
- 
+import SacrificeArtCC from "../CreativeCommonsFolder/SacrificeArtCC.jsx";
 import './GoatFooter.css'
-
+ 
 const GoatFooter = () => {
   return (
     <div className="goat-footer-outer-wrapper w-full h-full relative">
@@ -15,13 +15,7 @@ const GoatFooter = () => {
       <div 
   className="footer-nature-top-banner relative"
   style={{ backgroundImage: `url(${TaosImage})` }}
->
-  <p className="text-white bg-black border-2 border-black rounded-2xl
-      text-[0.3rem] sm:text-[0.5rem] px-4  right-4
-        w-fit bottom-1 absolute whitespace-nowrap">
-   
-     Offering to the Great Spirit - Eanger Irving Couse
-  </p>
+><SacrificeArtCC />
 </div>
 
           
@@ -30,7 +24,7 @@ const GoatFooter = () => {
         {/* FOOTER CONTENT LAYER */}
         <div className="relative z-10 h-full w-full">
           <span className="copyRightInstaller absolute bottom-[1.23rem] left-4 z-10 h-10 w-10 bg-transparent">
-            <a href="https://mybabb.com/youtubepageecho">
+            <a href="https://mybabb.com/youtubepagecatwoman">
               <div className="copyRightAnchorTag2">
                 <div className="copyRightContainer2 flex flex-col items-center justify-center px-8 py-4">
                   <span className="copyRightCool2 absolute left-4 top-[50%] -translate-y-1/2 transform">

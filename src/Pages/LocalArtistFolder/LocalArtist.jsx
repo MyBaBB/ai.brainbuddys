@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import ReverseButton from "../../Components/ReverseButton/ReverseButton.jsx";
 import HippieME from "../../Components/HippieMeFolder/HippieMe.jsx";
 import GoatFooter from "../../Components/FooterFolder/GoatFooter.jsx";
- 
+import CaveArtCC from "../../Components/CreativeCommonsFolder/BuffaloArtCC.jsx";
+import SacrificeArtCC from "../../Components/CreativeCommonsFolder/SacrificeArtCC.jsx"
 import "./LocalArtist.css";
 
 const LocalArtistFolder = () => {
@@ -13,6 +14,7 @@ const LocalArtistFolder = () => {
   return (
     <>
       <div className="local-artist-wrapper absolute">
+         <div className="caveArtCC text-white z-50" >< CaveArtCC /></div>
         {/* HEADER */}
         <header className="local-artist-header relative">
           <ReverseButton />
