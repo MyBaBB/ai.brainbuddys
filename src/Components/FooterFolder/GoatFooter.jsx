@@ -10,7 +10,7 @@ import './GoatFooter.css'
  
 const GoatFooter = () => {
   return (
-    <div className="goat-footer-outer-wrapper w-full h-full relative">
+      <div className="goat-footer-outer-wrapper w-full h-full relative ">
       {/* NATURE IMAGE BANNER PLACED DIRECTLY ON TOP OF THE FOOTER */}
       <div 
   className="footer-nature-top-banner relative"
