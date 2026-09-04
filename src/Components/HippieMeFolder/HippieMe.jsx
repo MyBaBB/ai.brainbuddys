@@ -7,7 +7,7 @@ const HippieMe = () => {
     <div className="hippie-me-container relative mx-auto mt-4 -mb-20 flex justify-center pointer-events-none">
       <div className="hybridTooltip2">
         <div className="tooltipTextLayer">
-          Human Hands Craft Better Energy{" "}
+          Support Local Artist 
         </div>
         
         <div className="tooltipTextLayer2">
@@ -17,6 +17,12 @@ const HippieMe = () => {
         <div className="tooltipTextLayer3">
           You Can Take it or Leave it
         </div>
+       
+        <div className="tooltipTextLayer4">
+           Try Hybrid Web-Craft
+        </div>
+
+
       </div>
     </div>
   )
