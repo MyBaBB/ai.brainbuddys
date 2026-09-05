@@ -7,13 +7,10 @@
   cursor: pointer;
   font-family: "Sansita-Regular", sans-serif;
   -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Older Firefox */
-  -ms-user-select: none;     /* Old IE/Edge */
-  user-select: none;         /* Standard */
+  -moz-user-select: none; /* Older Firefox */
+  -ms-user-select: none; /* Old IE/Edge */
+  user-select: none; /* Standard */
 }
-
-
-
 
 /* Collapsed Header Pill */
 .cc-BuffaloArt-badge-header {
@@ -55,13 +52,13 @@
   box-shadow: 0px 0px 10px 0px darkslategrey;
   color: #fbe8d7;
   font-size: 0.8rem;
- 
-  animation: slideDown 0.2s ease-in-out;
 
+  animation: slideDown 0.2s ease-in-out;
 }
-  
-.cc-icon, .cc-icon2 {
-  font-size: 1.15rem
+
+.cc-icon,
+.cc-icon2 {
+  font-size: 1.15rem;
 }
 
 @media screen and (max-width: 528px) {
@@ -69,21 +66,19 @@
     top: 1.5rem;
     right: 1.5rem;
     display: none;
-   }
-.cc-BuffaloArt-badge-header, .cc-icon, .cc-icon2 {
-  font-size: 0.35rem
-}
+  }
+  .cc-BuffaloArt-badge-header,
+  .cc-icon,
+  .cc-icon2 {
+    font-size: 0.35rem;
+  }
 }
 @media screen and (min-width: 528px) and (max-width: 1200px) {
   .cc-BuffaloArt-badge-wrapper {
     top: 1.5rem;
     right: 1.5rem;
-  
-   }
+  }
 }
-
-
-
 
 /* Invisible bridge element connecting button and menu */
 .cc-BuffaloArt-details-popout::after {
@@ -111,14 +106,14 @@
   margin: 8px 0;
 }
 
-.cc-BuffaloArt-link, 
+.cc-BuffaloArt-link,
 .cc-BuffaloArt-source-link {
   color: #ade0f8;
   text-decoration: underline;
   transition: color 0.2s ease;
 }
 
-.cc-BuffaloArt-link:hover, 
+.cc-BuffaloArt-link:hover,
 .cc-BuffaloArt-source-link:hover {
   color: #adff2f;
 }
@@ -139,13 +134,12 @@
   }
 }
 
-
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 .cc-SacrificeArt-badge-wrapper {
   position: absolute;
   background-color: black;
-  padding:2px 8px;
-  border:1px solid black;
+  padding: 2px 8px;
+  border: 1px solid black;
   border-radius: 5.4px;
   border-radius: 12px;
   bottom: 0.5rem; /* Anchored to bottom instead of top */
@@ -155,13 +149,13 @@
   cursor: pointer;
   font-family: "Sansita-Regular", sans-serif;
   -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Older Firefox */
-  -ms-user-select: none;     /* Old IE/Edge */
-  user-select: none;         /* Standard */
+  -moz-user-select: none; /* Older Firefox */
+  -ms-user-select: none; /* Old IE/Edge */
+  user-select: none; /* Standard */
 }
 
 /* Collapsed Header Pill */
-.cc-SacrificeArt-header  {
+.cc-SacrificeArt-header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -230,14 +224,14 @@
   margin: 8px 0;
 }
 
-.cc-SacrificeArt-link, 
+.cc-SacrificeArt-link,
 .cc-SacrificeArt-source-link {
   color: #ade0f8;
   text-decoration: underline;
   transition: color 0.2s ease;
 }
 
-.cc-SacrificeArt-link:hover, 
+.cc-SacrificeArt-link:hover,
 .cc-SacrificeArt-source-link:hover {
   color: #adff2f;
 }
@@ -262,15 +256,16 @@
     top: 1.5rem;
     right: 1.5rem;
     display: none;
-   }
-.cc-SacrificeArt-badge-header, .cc-icon, .cc-icon2 {
-  font-size: 0.35rem
+  }
+  .cc-SacrificeArt-badge-header,
+  .cc-icon,
+  .cc-icon2 {
+    font-size: 0.35rem;
+  }
 }
-}
-@media screen and (min-width: 528px)   {
- .cc-SacrificeArt-badge-wrapper {
+@media screen and (min-width: 528px) {
+  .cc-SacrificeArt-badge-wrapper {
     bottom: 1rem;
     right: 1.5rem;
-  
-   }
+  }
 }

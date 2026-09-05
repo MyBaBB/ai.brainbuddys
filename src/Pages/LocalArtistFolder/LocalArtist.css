@@ -1,21 +1,21 @@
 .local-artist-wrapper {
   width: 100%;
   min-height: 100vh;
-  overflow-y: hidden; 
+  overflow-y: hidden;
   position: relative;
   background-image: url("../../Images/Buffalo-Cave-Art.webp");
   background-size: cover minmax(100%, auto);
   background-position: center -8rem;
   background-repeat: no-repeat;
-  background-color: #120D0F;
-  background-attachment: scroll; 
+  background-color: #120d0f;
+  background-attachment: scroll;
 }
 
 /* Floating Objects */
 .float {
   position: absolute;
   width: 80px;
-  opacity: 0.8; 
+  opacity: 0.8;
   animation: floaty 10s infinite ease-in-out;
 }
 
@@ -47,7 +47,7 @@
   }
 }
 
- .top-groovy-title {
+.top-groovy-title {
   background: linear-gradient(
     to bottom,
     rgba(63, 46, 36, 0.85) 0%,
@@ -65,16 +65,14 @@
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-    
- }
- 
- 
+}
+
 /* Content Box */
 .content-box {
   max-width: 700px;
   margin: auto;
   margin-top: 1.275rem;
-  
+
   background: rgba(55, 39, 29, 0.4);
   padding: 10px;
   padding-top: 5px;
@@ -255,9 +253,7 @@
   margin-top: 15px;
 }
 /* BACK TO TOP BUTTON */
- 
 
- 
 /* Container */
 .traditionalSwapBlock {
   width: fit-content;
@@ -285,12 +281,5 @@
   color: #fbe8d7;
   white-space: nowrap;
   margin: 0 auto;
-  text-shadow:  1px 1px 2px rgba(0, 0, 0, 1);
-  
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
- 
-
- 
-
-
-

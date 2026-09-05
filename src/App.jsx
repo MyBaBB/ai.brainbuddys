@@ -9,7 +9,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Zenith />} />
-          <Route path="/localartist" element={<LocalArtist />} />       
+          <Route path="/localartist" element={<LocalArtist />} />
         </Routes>
       </Router>
     </main>

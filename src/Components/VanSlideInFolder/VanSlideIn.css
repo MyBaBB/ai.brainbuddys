@@ -16,10 +16,9 @@
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-    
- }
+}
 
- .tbCamper {
+.tbCamper {
   display: inline-block;
   animation: hippieVanSlide 4.2s ease-out forwards;
   transform-origin: center;
