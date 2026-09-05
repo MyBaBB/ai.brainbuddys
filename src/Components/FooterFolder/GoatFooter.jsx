@@ -6,7 +6,7 @@ import BatSignal from "../ContactMeFolder/ContactMe.jsx";
 import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx";
 import TaosImage from "../../Images/ai.brainbuddys.webp";
 import SacrificeArtCC from "../CreativeCommonsFolder/SacrificeArtCC.jsx";
-import { GiSurprisedSkull } from "react-icons/gi";
+import { PiMountainsDuotone } from "react-icons/pi";
 import "./GoatFooter.css";
 
 const GoatFooter = () => {
@@ -51,16 +51,17 @@ const GoatFooter = () => {
 
 
 {/* BACK TO TOP BUTTON */}
-<div className="goat relative m-auto mb-8 w-fit whitespace-nowrap">
+<div className="goat relative m-auto h-fit w-fit">
   <button
     className="backToTopBtn"
     onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
   >
     <GiGoat size={50} />
-    <span className="tooltipGoat hidden sm:block"
-            >      
-      <GiSurprisedSkull />
-      <span className="tooltipGoatText text-xl">Back to Top</span>
+    
+    {/* Single unified tooltip wrapper */}
+    <span className="tooltipGoat hidden sm:flex">
+      <PiMountainsDuotone />
+      <span className="tooltipGoatText">Rise Above</span>
     </span>
   </button>
 </div>
