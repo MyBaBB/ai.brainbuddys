@@ -3,7 +3,7 @@ import ReverseButton from "../../Components/ReverseButton/ReverseButton.jsx";
 import HippieME from "../../Components/HippieMeFolder/HippieMe.jsx";
 import GoatFooter from "../../Components/FooterFolder/GoatFooter.jsx";
 import CaveArtCC from "../../Components/CreativeCommonsFolder/BuffaloArtCC.jsx";
-import SacrificeArtCC from "../../Components/CreativeCommonsFolder/SacrificeArtCC.jsx"
+import SacrificeArtCC from "../../Components/CreativeCommonsFolder/SacrificeArtCC.jsx";
 import "./LocalArtist.css";
 
 const LocalArtistFolder = () => {
@@ -14,7 +14,9 @@ const LocalArtistFolder = () => {
   return (
     <>
       <div className="local-artist-wrapper absolute">
-         <div className="caveArtCC text-white z-50" >< CaveArtCC /></div>
+        <div className="caveArtCC z-50 text-white">
+          <CaveArtCC />
+        </div>
         {/* HEADER */}
         <header className="local-artist-header relative">
           <ReverseButton />
@@ -25,7 +27,7 @@ const LocalArtistFolder = () => {
         <main className="content-box relative">
           <ul className="groovy-list mt-4">
             <div className="items-enter relative flex w-full justify-center">
-              <div className="traditionalSwapBlock w-[10rem] md:w-[15rem] traditionalWord">
+              <div className="traditionalSwapBlock traditionalWord w-[10rem] md:w-[15rem]">
                 <div className="quoteLeft absolute left-2 top-[50%] -translate-y-1/2 scale-x-[-1] transform text-base xs:text-lg md:text-2xl">
                   ✌🏻
                 </div>
@@ -55,11 +57,8 @@ const LocalArtistFolder = () => {
           </p>
         </main>
 
-     
-         <GoatFooter />
-        
+        <GoatFooter />
       </div>
-      
     </>
   );
 };

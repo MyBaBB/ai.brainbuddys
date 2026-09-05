@@ -14,7 +14,9 @@ const SacrificeArtCC = () => {
     >
       {/* Collapsed Header Pill */}
       <div className="cc-SacrificeArt-header">
-        <span className="cc-SacrificeArt-icon cc-icon2 scale-x-[-1] "><BiDonateBlood /></span>
+        <span className="cc-SacrificeArt-icon cc-icon2 scale-x-[-1]">
+          <BiDonateBlood />
+        </span>
         <span className="cc-SacrificeArt-title">
           Offering to the Great Spirit - E.I. Couse
         </span>
@@ -25,10 +27,12 @@ const SacrificeArtCC = () => {
       {isOpen && (
         <div className="cc-SacrificeArt-details-popout">
           <p className="cc-SacrificeArt-detail-item">
-            <span className="itemColor">Artwork:</span> Offering to the Great Spirit (1921)
+            <span className="itemColor">Artwork:</span> Offering to the Great
+            Spirit (1921)
           </p>
           <p className="cc-SacrificeArt-detail-item">
-            <span className="itemColor">Artist:</span> E. Irving Couse (Taos Art Colony)
+            <span className="itemColor">Artist:</span> E. Irving Couse (Taos Art
+            Colony)
           </p>
           <p className="cc-SacrificeArt-detail-item">
             <span className="itemColor">Medium:</span> Oil on Canvas

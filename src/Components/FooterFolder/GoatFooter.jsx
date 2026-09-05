@@ -1,24 +1,25 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import { GiGoat } from "react-icons/gi"
-import { FaRegCopyright } from "react-icons/fa"
-import BatSignal from "../ContactMeFolder/ContactMe.jsx"
-import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx"
-import TaosImage from "../../Images/ai.brainbuddys.webp"
+import React from "react";
+import { GiGoat } from "react-icons/gi";
+import { FaRegCopyright } from "react-icons/fa";
+import BatSignal from "../ContactMeFolder/ContactMe.jsx";
+import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx";
+import TaosImage from "../../Images/ai.brainbuddys.webp";
 import SacrificeArtCC from "../CreativeCommonsFolder/SacrificeArtCC.jsx";
-import './GoatFooter.css'
- 
+import { PiMountainsDuotone } from "react-icons/pi";
+import "./GoatFooter.css";
+
 const GoatFooter = () => {
   return (
-      <div className="goat-footer-outer-wrapper w-full h-full relative ">
+    <div className="goat-footer-outer-wrapper relative h-full w-full">
       {/* NATURE IMAGE BANNER PLACED DIRECTLY ON TOP OF THE FOOTER */}
-      <div 
-  className="footer-nature-top-banner relative"
-  style={{ backgroundImage: `url(${TaosImage})` }}
-><SacrificeArtCC />
-</div>
+      <div
+        className="footer-nature-top-banner relative"
+        style={{ backgroundImage: `url(${TaosImage})` }}
+      >
+        <SacrificeArtCC />
+      </div>
 
-          
       {/* FOOTER MAIN CONTAINER */}
       <footer className="goat-footer-wrapper relative mt-4 w-full">
         {/* FOOTER CONTENT LAYER */}
@@ -48,26 +49,31 @@ const GoatFooter = () => {
             </span>
           </aside>
 
-          {/* BACK TO TOP BUTTON */}
-          <div className="goat relative m-auto mb-8 w-fit whitespace-nowrap">
-            <button
-              className="backToTopBtn"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <GiGoat size={50} />
-              <span className="tooltipGoat hidden sm:block">To Top</span>
-            </button>
-          </div>
-          
+
+{/* BACK TO TOP BUTTON */}
+<div className="goat relative m-auto h-fit w-fit">
+  <button
+    className="backToTopBtn"
+    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+  >
+    <GiGoat size={50} />
+    
+    {/* Single unified tooltip wrapper */}
+    <span className="tooltipGoat hidden sm:flex">
+      <PiMountainsDuotone />
+      <span className="tooltipGoatText">Rise Above</span>
+    </span>
+  </button>
+</div>
+
           {/* FOOTPRINTS ANCHORED AT THE BOTTOM OF THE FOOTER */}
-          <div className="absolute -bottom-4 left-0 w-full z-[99999] pointer-events-none">
+          <div className="pointer-events-none absolute -bottom-4 left-0 z-[99999] w-full">
             <HippieFootprints />
           </div>
-
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default GoatFooter
+export default GoatFooter;
