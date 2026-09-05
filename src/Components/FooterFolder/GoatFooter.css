@@ -212,3 +212,11 @@
     font-size 0.45s ease;
   z-index: 9999;
 }
+.footprintsBackground {
+  background: radial-gradient(
+    circle at 50% 50%,
+    #0a1a2f,
+    #00111c 60%,
+    #000000 100%
+  );
+}
