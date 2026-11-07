@@ -52,3 +52,51 @@
     transform: scale(1);
   }
 }
+.tipStyles:before {
+  background: radial-gradient(#8d3d0e, #3c2b20);
+  color: aliceblue;
+  border: 1px solid #8d3d0e;
+  font-weight: Bold;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: max-content;
+  position: absolute;
+  content: attr(data-tool-tip);
+  text-shadow: 1px 1px 1px black;
+}
+
+.dataToolTip233 {
+  top: -2px;
+}
+.dataToolTip233:hover::before,
+.dataToolTip233:hover::after {
+  --scale: 1;
+}
+.dataToolTip233::before {
+  top: -3.85rem;
+  left: 4rem;
+  transform: translateX(-100%) scale(var(--scale));
+  transform-origin: bottom right;
+  transition: ease-in 0.25s;
+  --scale: 0;
+  z-index: 3;
+}
+.dataToolTip233::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  padding: 0.1em 0.1em 0.2em 0.1em;
+  top: -1.65rem;
+  left: 2.2rem;
+  transform: translateX(-35%) scale(var(--scale));
+  transform-origin: top center;
+  transition: 0.25s;
+  border: 15px solid transparent;
+  border-top: #f9f391 10px solid;
+  --scale: 0;
+  z-index: 1;
+}

@@ -27,7 +27,9 @@ const GoatFooter = () => {
         <div className="relative z-10 h-full w-full">
           <span className="copyRightInstaller absolute bottom-[1.23rem] left-4 z-10 h-10 w-10 bg-transparent">
             <a href="https://mybabb.com/youtubepagecatwoman">
-              <div className="copyRightAnchorTag2">
+
+              <div className="copyRightAnchorTag2 dataToolTipHybrid tipStylesHybrid"
+                   data-tool-tip="Cool Cat Woman Video 👀">
                 <div className="copyRightContainer2 flex flex-col items-center justify-center px-8 py-4">
                   <span className="copyRightCool2 absolute left-4 top-[50%] -translate-y-1/2 transform">
                     <FaRegCopyright />
@@ -50,11 +52,15 @@ const GoatFooter = () => {
             </span>
           </aside>
 
- <a href="https://brainbuddys.com/blair">
-          <span className="indianGirlBottom  ">
-            <img src={IndianGirl} alt="Nerdy Indian Coms Girl" />
-          </span>
-          </a>
+ <a 
+  href="https://brainbuddys.com/blair" 
+  className="dataToolTipIndianGirl tipStylesIndianGirl"
+  data-tool-tip="Ask Blair About Art"
+>
+  <span className="indianGirlBottom">
+    <img src={IndianGirl} alt="Nerdy Indian Coms Girl" />
+  </span>
+</a>
 
 
 {/* BACK TO TOP BUTTON */}
@@ -66,8 +72,8 @@ const GoatFooter = () => {
     <GiGoat size={50} />
     
     {/* Single unified tooltip wrapper */}
-    <span className="tooltipGoat hidden sm:flex">
-      <PiMountainsDuotone />
+      <span className="tooltipGoat hidden sm:flex">
+        <PiMountainsDuotone />
       <span className="tooltipGoatText">Rise Above</span>
     </span>
   </button>
