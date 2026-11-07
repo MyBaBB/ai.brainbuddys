@@ -7,6 +7,7 @@ import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx";
 import TaosImage from "../../Images/ai.brainbuddys.webp";
 import SacrificeArtCC from "../CreativeCommonsFolder/SacrificeArtCC.jsx";
 import { PiMountainsDuotone } from "react-icons/pi";
+import IndianGirl from "../../Images/indianComsGirl.webp"
 import "./GoatFooter.css";
 
 const GoatFooter = () => {
@@ -48,6 +49,12 @@ const GoatFooter = () => {
               <BatSignal />
             </span>
           </aside>
+
+ <a href="https://brainbuddys.com/blair">
+          <span className="indianGirlBottom  ">
+            <img src={IndianGirl} alt="Nerdy Indian Coms Girl" />
+          </span>
+          </a>
 
 
 {/* BACK TO TOP BUTTON */}

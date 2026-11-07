@@ -220,3 +220,21 @@
     #000000 100%
   );
 }
+.indianGirlBottom {
+  position: absolute;
+  top: -4rem; /* or 4px */
+  left: 50%;
+  transform: translateX(-50%);    /* or 4px */
+  width: 95px;
+  height: 95px;
+  border: 2px solid #b91c1c; /* Tailwind red-700 hex color */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+ .indianGirlBottom {
+  display: none;
+  
+ }  
+}

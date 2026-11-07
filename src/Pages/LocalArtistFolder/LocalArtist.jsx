@@ -3,7 +3,7 @@ import ReverseButton from "../../Components/ReverseButton/ReverseButton.jsx";
 import HippieME from "../../Components/HippieMeFolder/HippieMe.jsx";
 import GoatFooter from "../../Components/FooterFolder/GoatFooter.jsx";
 import CaveArtCC from "../../Components/CreativeCommonsFolder/BuffaloArtCC.jsx";
-import SacrificeArtCC from "../../Components/CreativeCommonsFolder/SacrificeArtCC.jsx";
+import IndianGirl from "../../Images/indianComsGirl.webp"
 import "./LocalArtist.css";
 
 const LocalArtistFolder = () => {
@@ -13,8 +13,15 @@ const LocalArtistFolder = () => {
 
   return (
     <>
-      <div className="local-artist-wrapper absolute">
+      <div className="local-artist-wrapper absolute ">
         <div className="caveArtCC z-50 text-white">
+          <a href="https://brainbuddys.com/blair">
+          <span className="indianGirl absolute  top-1 left-1 
+                        w-[95px] h-[95px] md:w-[125px] md:h-[125px]
+                        border-[2px] border-red-700 rounded-full overflow-hidden ">
+            <img src={IndianGirl} alt="Nerdy Indian Coms Girl" />
+          </span>
+          </a>
           <CaveArtCC />
         </div>
         {/* HEADER */}
@@ -55,8 +62,9 @@ const LocalArtistFolder = () => {
             Digital art has been around for decades — long before AI — and it’s
             a real, soulful art form made by actual humans with actual vibes.
           </p>
+          
         </main>
-
+         
         <GoatFooter />
       </div>
     </>

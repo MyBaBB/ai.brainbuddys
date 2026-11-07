@@ -61,7 +61,7 @@
   font-size: 1.15rem;
 }
 
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 722px) {
   .cc-BuffaloArt-badge-wrapper {
     top: 1.5rem;
     right: 1.5rem;
