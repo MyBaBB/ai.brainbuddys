@@ -10,8 +10,10 @@
 @font-face {
   font-family: "Itim-Regular";
   src: url(../GoogleFonts/Itim-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "Sansita-Regular";
   src: url(../GoogleFonts/Sansita-Regular.ttf);
+  font-display: swap;
 }
