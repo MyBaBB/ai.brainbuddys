@@ -4,7 +4,7 @@ import { GiGoat } from "react-icons/gi";
 import { FaRegCopyright } from "react-icons/fa";
 import BatSignal from "../ContactMeFolder/ContactMe.jsx";
 import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx";
-import TaosImage from "../../Images/ai.brainbuddys.webp";
+import TaosImage from "../../Images/ai.brainbuddys2.webp";
 import SacrificeArtCC from "../CreativeCommonsFolder/SacrificeArtCC.jsx";
 import { PiMountainsDuotone } from "react-icons/pi";
 import IndianGirl from "../../Images/indianComsGirl.webp"
