@@ -7,7 +7,7 @@ import HippieFootprints from "../HippieFootprintsFolder/HippieFootprints.jsx";
 import TaosImage from "../../Images/ai.brainbuddys2.webp";
 import SacrificeArtCC from "../CreativeCommonsFolder/SacrificeArtCC.jsx";
 import { PiMountainsDuotone } from "react-icons/pi";
-import IndianGirl from "../../Images/indianComsGirl.webp"
+import IndianGirl from "../../Images/indianComsGirl.webp";
 import "./GoatFooter.css";
 
 const GoatFooter = () => {
@@ -27,9 +27,10 @@ const GoatFooter = () => {
         <div className="relative z-10 h-full w-full">
           <span className="copyRightInstaller bg-transparent">
             <a href="https://mybabb.com/youtubepagecatwoman">
-
-              <div className="copyRightAnchorTag2 dataToolTipHybrid tipStylesHybrid"
-                   data-tool-tip="Cool Cat Woman Video 👀">
+              <div
+                className="copyRightAnchorTag2 dataToolTipHybrid tipStylesHybrid"
+                data-tool-tip="Cool Cat Woman Video 👀"
+              >
                 <div className="copyRightContainer2 flex flex-col items-center justify-center px-8 py-4">
                   <span className="copyRightCool2 absolute left-4 top-[50%] -translate-y-1/2 transform">
                     <FaRegCopyright />
@@ -52,35 +53,34 @@ const GoatFooter = () => {
             </span>
           </aside>
 
- <a 
-  href="https://brainbuddys.com/blair" 
-  className="dataToolTipIndianGirl tipStylesIndianGirl"
-  data-tool-tip="Ask Blair About Art"
->
-  <span className="indianGirlBottom">
-    <img src={IndianGirl} alt="Nerdy Indian Coms Girl" />
-  </span>
-</a>
+          <a
+            href="https://brainbuddys.com/blair"
+            className="dataToolTipIndianGirl tipStylesIndianGirl"
+            data-tool-tip="Ask Blair About Art"
+          >
+            <span className="indianGirlBottom">
+              <img src={IndianGirl} alt="Nerdy Indian Coms Girl" />
+            </span>
+          </a>
 
+          {/* BACK TO TOP BUTTON */}
+          <div className="goat relative m-auto h-fit w-fit">
+            <button
+              className="backToTopBtn"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <GiGoat size={50} />
 
-{/* BACK TO TOP BUTTON */}
-<div className="goat relative m-auto h-fit w-fit">
-  <button
-    className="backToTopBtn"
-    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-  >
-    <GiGoat size={50} />
-    
-    {/* Single unified tooltip wrapper */}
-      <span className="tooltipGoat hidden sm:flex">
-        <PiMountainsDuotone />
-      <span className="tooltipGoatText">Rise Above</span>
-    </span>
-  </button>
-</div>
+              {/* Single unified tooltip wrapper */}
+              <span className="tooltipGoat hidden sm:flex">
+                <PiMountainsDuotone />
+                <span className="tooltipGoatText">Rise Above</span>
+              </span>
+            </button>
+          </div>
 
           {/* FOOTPRINTS ANCHORED AT THE BOTTOM OF THE FOOTER */}
-          <div className=" footprintsVanishingPoint pointer-events-none absolute -bottom-4 left-0 z-[99999] w-full">
+          <div className="footprintsVanishingPoint pointer-events-none absolute -bottom-4 left-0 z-[99999] w-full">
             <HippieFootprints />
           </div>
         </div>

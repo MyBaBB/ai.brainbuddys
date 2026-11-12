@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { PiEyesFill } from "react-icons/pi";
- 
 
 export default function DynamicFavicon() {
   useEffect(() => {
@@ -27,7 +26,7 @@ export default function DynamicFavicon() {
 
     updateFavicon();
     // Favicon interval set to 3 seconds (3000ms)
-    const faviconInterval = setInterval(updateFavicon,8000);
+    const faviconInterval = setInterval(updateFavicon, 8000);
 
     // 2. Title Animation Logic
     const titles = [" 🪦 Here's Your Sign 🪦 ", " 💀 Dead Website? 💀"];

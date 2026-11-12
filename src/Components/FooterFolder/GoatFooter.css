@@ -82,24 +82,22 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-   background: radial-gradient(#74320b, #3c2b20);
-  color: aliceblue ;
+  background: radial-gradient(#74320b, #3c2b20);
+  color: aliceblue;
   border: 1px solid #381806;
   font-size: 3.5rem; /* Scaled to balanced proportions */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
- 
+
   border-radius: 12px;
- 
+
   padding: 2px 9px;
- 
-  
 }
 
 /* Tooltip Text Pill */
 .tooltipGoatText {
-  color: aliceblue ;
+  color: aliceblue;
   white-space: nowrap;
   font-family: "Itim-Regular", sans-serif;
   font-weight: 500;
@@ -127,17 +125,17 @@
 
 /* Trigger animation on hover */
 .backToTopBtn:hover .tooltipGoat {
-  animation: tooltipRiseBounce 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation: tooltipRiseBounce 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    forwards;
 }
 
 @media (max-width: 700px) {
   .goat {
     display: none;
   }
-} 
+}
 
 /* COPYRIGHT CONTAINER & HOVER EFFECTS */
-
 
 .copyRightInstaller {
   position: absolute;
@@ -145,19 +143,19 @@
   left: 20%;
 
   z-index: 10;
-  height: 2.5rem; 
-  width: 2.5rem; 
+  height: 2.5rem;
+  width: 2.5rem;
 }
-@media  screen and (min-width: 250px) {
+@media screen and (min-width: 250px) {
   .copyRightInstaller {
-  position: absolute;
-  bottom: 1.23rem;
-  left: 1rem;
- 
-  z-index: 10;
-  height: 2.5rem; 
-  width: 2.5rem; 
-}
+    position: absolute;
+    bottom: 1.23rem;
+    left: 1rem;
+
+    z-index: 10;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 
 .copyRightAnchorTag2 {
@@ -243,7 +241,7 @@
 }
 .indianGirlBottom {
   position: absolute;
-  top: -4.25rem;  
+  top: -4.25rem;
   left: 2.55rem;
   width: 95px;
   height: 95px;
@@ -253,24 +251,22 @@
 }
 
 @media screen and (max-width: 249px) {
- .indianGirlBottom {
-    right:0;
+  .indianGirlBottom {
+    right: 0;
     transform: translateX(30%);
-   }
-   
   }
+}
 
-  @media screen and (min-width: 700px) {
- .indianGirlBottom {
-   
-  top: -4.25rem;
-   }
+@media screen and (min-width: 700px) {
+  .indianGirlBottom {
+    top: -4.25rem;
+  }
   .indianGirlBottom:hover {
     scale: 95%;
-    opacity: .9;
-  }  
+    opacity: 0.9;
+  }
 }
- /* Position offset for the wrapper element */
+/* Position offset for the wrapper element */
 .dataToolTipIndianGirl {
   position: relative; /* Ensure parent has positioning context */
   top: -2px;
@@ -288,7 +284,7 @@
   width: max-content;
   position: absolute;
   text-shadow: 1px 1px 1px black;
-  
+
   /* Positioning */
   top: -2.5rem;
   left: 23rem;
@@ -323,7 +319,7 @@
 .dataToolTipIndianGirl:hover::after {
   --scale: 1;
 }
- 
+
 .dataToolTipHybrid {
   position: relative; /* Ensure parent has positioning context */
   top: -2px;
@@ -341,7 +337,7 @@
   width: max-content;
   position: absolute;
   text-shadow: 1px 1px 1px black;
-  
+
   /* Positioning */
   top: -2.5rem;
   left: 29.175rem;
@@ -367,7 +363,7 @@
 
   /* Animation & Scaling */
   transform: translateX(-35%) scale(var(--scale, 0));
-  transform-origin: bottom right ;
+  transform-origin: bottom right;
   transition: transform 0.25s ease-in;
 }
 
@@ -376,13 +372,15 @@
 .dataToolTipHybrid:hover::after {
   --scale: 1;
 }
- 
- @media screen and (max-width: 500px){
 
- .footprintsVanishingPoint, .tipStylesHybrid::before, .tipStylesHybrid::after,
- .tipStylesIndianGirl::before, .tipStylesIndianGirl::after,
- .dataToolTip233::before, .dataToolTip233::after    
-  {
-  display: none;
+@media screen and (max-width: 500px) {
+  .footprintsVanishingPoint,
+  .tipStylesHybrid::before,
+  .tipStylesHybrid::after,
+  .tipStylesIndianGirl::before,
+  .tipStylesIndianGirl::after,
+  .dataToolTip233::before,
+  .dataToolTip233::after {
+    display: none;
   }
- }
+}

@@ -3,7 +3,7 @@ import ReverseButton from "../../Components/ReverseButton/ReverseButton.jsx";
 import HippieME from "../../Components/HippieMeFolder/HippieMe.jsx";
 import GoatFooter from "../../Components/FooterFolder/GoatFooter.jsx";
 import CaveArtCC from "../../Components/CreativeCommonsFolder/BuffaloArtCC.jsx";
- 
+
 import "./LocalArtist.css";
 
 const LocalArtistFolder = () => {
@@ -13,9 +13,8 @@ const LocalArtistFolder = () => {
 
   return (
     <>
-      <div className="local-artist-wrapper absolute ">
+      <div className="local-artist-wrapper absolute">
         <div className="caveArtCC z-50 text-white">
-           
           <CaveArtCC />
         </div>
         {/* HEADER */}
@@ -56,9 +55,8 @@ const LocalArtistFolder = () => {
             Digital art has been around for decades — long before AI — and it’s
             a real, soulful art form made by actual humans with actual vibes.
           </p>
-          
         </main>
-         
+
         <GoatFooter />
       </div>
     </>
