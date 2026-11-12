@@ -68,14 +68,19 @@
     display: none;
   }
   .cc-BuffaloArt-badge-header,
-  .cc-icon
-  {
-    font-size: 0.35rem;
+  .cc-icon,
+  .cc-SacrificeArt-title,
+  .cc-SacrificeArt-arrow
+   {
+    font-size: .5rem;
   }
-   .cc-icon2 {
-    font-size: 1rem;
-   }
+    .cc-icon2 {
+      font-size: .75rem;
+    } 
+
 }
+
+
 @media screen and (min-width: 528px) and (max-width: 1200px) {
   .cc-BuffaloArt-badge-wrapper {
     top: 1.5rem;
@@ -141,7 +146,7 @@
 .cc-SacrificeArt-badge-wrapper {
   position: absolute;
   background-color: black;
-  padding: 2px 8px;
+ 
   border: 1px solid black;
   border-radius: 5.4px;
   border-radius: 12px;
@@ -187,7 +192,7 @@
 .cc-SacrificeArt-details-popout {
   position: absolute;
   bottom: 100%; /* Positions menu directly above header pill */
-  right: 0;
+  right: 1rem;
   width: 240px;
   padding: 10px 12px;
   margin-bottom: 6px; /* Space between pill and menu */
@@ -254,7 +259,7 @@
     transform: translateY(0);
   }
 }
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 350px) {
   .cc-SacrificeArt-badge-wrapper {
     top: 1.5rem;
     right: 1.5rem;
@@ -269,6 +274,6 @@
 @media screen and (min-width: 528px) {
   .cc-SacrificeArt-badge-wrapper {
     bottom: 1rem;
-    right: 1.5rem;
+    right: 1rem;
   }
 }
