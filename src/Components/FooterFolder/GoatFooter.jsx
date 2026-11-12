@@ -25,7 +25,7 @@ const GoatFooter = () => {
       <footer className="goat-footer-wrapper relative mt-[5.25rem] w-full">
         {/* FOOTER CONTENT LAYER */}
         <div className="relative z-10 h-full w-full">
-          <span className="copyRightInstaller absolute bottom-[1.23rem] left-4 z-10 h-10 w-10 bg-transparent">
+          <span className="copyRightInstaller bg-transparent">
             <a href="https://mybabb.com/youtubepagecatwoman">
 
               <div className="copyRightAnchorTag2 dataToolTipHybrid tipStylesHybrid"
@@ -80,7 +80,7 @@ const GoatFooter = () => {
 </div>
 
           {/* FOOTPRINTS ANCHORED AT THE BOTTOM OF THE FOOTER */}
-          <div className=" pointer-events-none absolute -bottom-4 left-0 z-[99999] w-full">
+          <div className=" footprintsVanishingPoint pointer-events-none absolute -bottom-4 left-0 z-[99999] w-full">
             <HippieFootprints />
           </div>
         </div>

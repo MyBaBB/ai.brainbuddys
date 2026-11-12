@@ -138,8 +138,27 @@
 } 
 
 /* COPYRIGHT CONTAINER & HOVER EFFECTS */
+
+
 .copyRightInstaller {
-  top: 1.63rem;
+  position: absolute;
+  bottom: 1.23rem;
+  left: 20%;
+
+  z-index: 10;
+  height: 2.5rem; 
+  width: 2.5rem; 
+}
+@media  screen and (min-width: 250px) {
+  .copyRightInstaller {
+  position: absolute;
+  bottom: 1.23rem;
+  left: 1rem;
+ 
+  z-index: 10;
+  height: 2.5rem; 
+  width: 2.5rem; 
+}
 }
 
 .copyRightAnchorTag2 {
@@ -239,10 +258,19 @@
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 350px) {
  .indianGirlBottom {
     display: none;
    }
+=======
+@media screen and (max-width: 249px) {
+ .indianGirlBottom {
+    right:0;
+    transform: translateX(30%);
+   }
+   
+>>>>>>> f8a896a67cb9bc2654c14a3e007fec3bad2f67f3
   }
 
   @media screen and (min-width: 700px) {
@@ -326,12 +354,10 @@
   width: max-content;
   position: absolute;
   text-shadow: 1px 1px 1px black;
-  
-  /* Positioning */
+    /* Positioning */
   top: -2.5rem;
   left: 29.175rem;
   z-index: 3;
-
   /* Animation & Scaling using your variable approach */
   transform: translateX(-100%) scale(var(--scale, 0));
   transform-origin: bottom left;
@@ -362,3 +388,9 @@
   --scale: 1;
 }
  
+ @media screen and (max-width: 500px){
+
+ .footprintsVanishingPoint, .tipStylesHybrid::before, .tipStylesHybrid::after {
+  display: none;
+  }
+ }
