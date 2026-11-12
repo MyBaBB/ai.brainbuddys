@@ -68,10 +68,13 @@
     display: none;
   }
   .cc-BuffaloArt-badge-header,
-  .cc-icon,
-  .cc-icon2 {
+  .cc-icon
+  {
     font-size: 0.35rem;
   }
+   .cc-icon2 {
+    font-size: 1rem;
+   }
 }
 @media screen and (min-width: 528px) and (max-width: 1200px) {
   .cc-BuffaloArt-badge-wrapper {

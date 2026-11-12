@@ -137,8 +137,27 @@
 } 
 
 /* COPYRIGHT CONTAINER & HOVER EFFECTS */
+
+
 .copyRightInstaller {
-  top: 1.63rem;
+  position: absolute;
+  bottom: 1.23rem;
+  left: 20%;
+
+  z-index: 10;
+  height: 2.5rem; 
+  width: 2.5rem; 
+}
+@media  screen and (min-width: 250px) {
+  .copyRightInstaller {
+  position: absolute;
+  bottom: 1.23rem;
+  left: 1rem;
+ 
+  z-index: 10;
+  height: 2.5rem; 
+  width: 2.5rem; 
+}
 }
 
 .copyRightAnchorTag2 {
@@ -224,9 +243,8 @@
 }
 .indianGirlBottom {
   position: absolute;
-  top: -4rem; /* or 4px */
-  left: 50%;
-  transform: translateX(-50%);    /* or 4px */
+  top: -4.25rem;  
+  left: 2.55rem;
   width: 95px;
   height: 95px;
   border: 2px solid #5d280a; /* Tailwind red-700 hex color */
@@ -234,10 +252,18 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 249px) {
  .indianGirlBottom {
-  left: 5.5rem;
-  top: -4.5rem;
+    right:0;
+    transform: translateX(30%);
+   }
+   
+  }
+
+  @media screen and (min-width: 700px) {
+ .indianGirlBottom {
+   
+  top: -4.25rem;
    }
   .indianGirlBottom:hover {
     scale: 95%;
@@ -351,3 +377,9 @@
   --scale: 1;
 }
  
+ @media screen and (max-width: 500px){
+
+ .footprintsVanishingPoint {
+  display: none;
+  }
+ }
