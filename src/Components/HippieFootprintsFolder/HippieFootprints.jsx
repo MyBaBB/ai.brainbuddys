@@ -30,14 +30,18 @@ export default function HippieFootprints() {
     return () => cancelAnimationFrame(frame);
   }, []);
 
+  // Use window width to loop positions cleanly without causing page width growth or clipping
+  const screenWidth = typeof window !== "undefined" ? window.innerWidth : 1200;
+  const maxWalkWidth = Math.max(screenWidth - 150, 300);
+
   // Derived animation values
   const step = Math.floor(elapsed / 2.5);
   const isLeft = step % 2 === 0;
 
-  const leftPx = step * 60;
+  const leftPx = (step * 60) % maxWalkWidth;
   const bottomPx = 64;
 
-  const cupX = elapsed * 24;
+  const cupX = (elapsed * 24) % maxWalkWidth;
   const cupSwing = elapsed * 3;
   const swingAngle = Math.sin(cupSwing) * 12;
 
@@ -47,7 +51,8 @@ export default function HippieFootprints() {
 
     setPuffs((prev) => {
       if (prev.some((p) => p.id === nextPuff)) return prev;
-      return [...prev, { id: nextPuff, uid: crypto.randomUUID() }];
+      const filtered = prev.filter((p) => nextPuff - p.id < 5);
+      return [...filtered, { id: nextPuff, uid: crypto.randomUUID() }];
     });
   }, [elapsed]);
 
@@ -63,14 +68,14 @@ export default function HippieFootprints() {
 
   return (
     <>
-      {/* FOOTPRINT */}
+      {/* FOOTPRINT (shifted forward by 40px to align with cup/hat) */}
       <GiFootprint
         key={step}
         size={40}
         className={`footprint fade-step ${isLeft ? "left-foot" : "right-foot"}`}
         style={{
           position: "absolute",
-          left: `${leftPx + 10}px`,
+          left: `${leftPx + 50}px`,
           bottom: `${bottomPx}px`,
           zIndex: 9998,
           pointerEvents: "none",
@@ -98,7 +103,7 @@ export default function HippieFootprints() {
         className="hat"
         style={{
           position: "absolute",
-          left: `${cupX - 12.5}px`,
+          left: `${cupX + 12.5}px`,
           bottom: `${hatBottomPx - 35}px`,
           zIndex: 9999,
           pointerEvents: "none",
