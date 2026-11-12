@@ -6,11 +6,12 @@ import "./ContactMe.css";
 
 const ContactMe = () => {
   return (
-    <div className="ContactButtonHide dataToolTip233 tipStyles  m-auto -mb-2 h-full w-full items-center justify-center"
+    <div className="ContactButtonHide dataToolTip233 relative tipStyles  m-auto   h-full w-fit items-center justify-center border-2 border-purple-500"
        data-tool-tip="Bat Rescue">
       <div
         id="contact"
-        className="buttonsAllWrapper z-20 m-auto w-fit cursor-pointer px-1 pb-2 duration-500 ease-in-out hover:scale-[100.8%]"
+        className="buttonsAllWrapper z-20 m-auto w-fit cursor-pointer px-1 pb-2 duration-500 ease-in-out hover:scale-[100.8%]
+        border-2 border-red-500"
       >
         <a
           href="https://mybabb.com "
