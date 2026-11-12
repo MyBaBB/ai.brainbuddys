@@ -379,7 +379,10 @@
  
  @media screen and (max-width: 500px){
 
- .footprintsVanishingPoint {
+ .footprintsVanishingPoint, .tipStylesHybrid::before, .tipStylesHybrid::after,
+ .tipStylesIndianGirl::before, .tipStylesIndianGirl::after,
+ .dataToolTip233::before, .dataToolTip233::after    
+  {
   display: none;
   }
  }
